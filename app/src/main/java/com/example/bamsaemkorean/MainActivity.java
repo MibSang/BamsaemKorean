@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
-        sttButton = (Button) findViewById(R.id.button);
-        resultText = (TextView) findViewById(R.id.textView);
+        //sttButton = (Button) findViewById(R.id.button);
+        //resultText = (TextView) findViewById(R.id.textView);
 
         listener = new STTListener(getContext(), resultText);
         intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
