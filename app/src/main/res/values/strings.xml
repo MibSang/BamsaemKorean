@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BamsaemKorean</string>
+    <string name="title">한국</string>
+    <string name="textview">TextView</string>
 </resources>
