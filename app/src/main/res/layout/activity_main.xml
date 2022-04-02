@@ -19,8 +19,8 @@
         android:layout_width="55dp"
         android:layout_height="58dp"
         app:srcCompat="@android:drawable/stat_notify_chat"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="660dp" />
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="657dp" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -197,7 +197,7 @@
         android:layout_height="58dp"
         app:srcCompat="?attr/actionModeSelectAllDrawable"
         tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="660dp" />
+        tools:layout_editor_absoluteY="657dp" />
 
     <ImageButton
         android:id="@+id/imageButton8"
