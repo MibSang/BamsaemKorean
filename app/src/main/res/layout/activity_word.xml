@@ -7,150 +7,112 @@
 
     <View
         android:id="@+id/divider5"
-        android:layout_width="415dp"
+        android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="20dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="237dp" />
 
     <View
         android:id="@+id/divider3"
         android:layout_width="404dp"
         android:layout_height="5dp"
-        android:layout_marginTop="24dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="153dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="24dp"
         android:verticalScrollbarPosition="defaultPosition"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/divider3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:srcCompat="@android:drawable/ic_menu_crop"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="87dp"
         tools:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="124dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kakaotalk_20220328_101438041" />
+        android:layout_width="130dp"
+        android:layout_height="106dp"
+        app:srcCompat="@drawable/kakaotalk_20220328_101438041"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="32dp" />
 
     <TextView
-        android:id="@+id/just_Text"
+        android:id="@+id/textView2"
         android:layout_width="99dp"
         android:layout_height="39dp"
-        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
         android:text="프랑스"
         android:textAlignment="center"
-        android:textSize="27"
+        android:textSize="27sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="179dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="92dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="175dp" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="16dp"
         android:rotationY="180"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="175dp" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="256dp"
         android:layout_height="226dp"
-        android:layout_marginBottom="272dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="265dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Space
-        android:id="@+id/space"
         android:layout_width="392dp"
         android:layout_height="177dp"
-        android:layout_marginBottom="76dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="518dp" />
 
     <ImageButton
         android:id="@+id/imageButton16"
         android:layout_width="54dp"
         android:layout_height="53dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton18"
-        app:layout_constraintTop_toTopOf="@+id/space"
-        app:srcCompat="@android:drawable/presence_audio_away" />
+        app:srcCompat="@android:drawable/presence_audio_away"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="518dp" />
 
     <ImageButton
         android:id="@+id/imageButton18"
         android:layout_width="54dp"
         android:layout_height="53dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/space"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="518dp" />
 
     <ImageButton
         android:id="@+id/imageButton19"
         android:layout_width="54dp"
         android:layout_height="53dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton16"
-        app:layout_constraintTop_toTopOf="@+id/space"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="518dp" />
 
     <View
         android:id="@+id/divider6"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="76dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="695dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
