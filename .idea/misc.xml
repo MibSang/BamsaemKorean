@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LG/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout-v31/activity_main2.xml" value="0.17708333333333334" />
-        <entry key="..\:/Users/LG/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_main.xml" value="0.176" />
-        <entry key="..\:/Users/LG/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_main2.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_category.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_home.xml" value="0.2296875" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_voice.xml" value="0.3242753623188406" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_word.xml" value="0.2296875" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2734375" />
       </map>
     </option>
   </component>

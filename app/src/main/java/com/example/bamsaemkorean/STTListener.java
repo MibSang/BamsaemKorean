@@ -84,8 +84,6 @@ public class STTListener implements RecognitionListener {
     @Override
     public void onResults(Bundle results) {
         ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-        System.out.println("인식: ");
-        System.out.println(matches);
         for (int i = 0; i < matches.size(); i++)
             output.setText(matches.get(i));
     }
