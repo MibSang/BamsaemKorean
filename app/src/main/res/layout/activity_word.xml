@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/kakaotalk_20220328_101438041" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/just_Text"
         android:layout_width="99dp"
         android:layout_height="39dp"
         android:layout_marginTop="16dp"
