@@ -53,7 +53,7 @@
             android:layout_marginBottom="13dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/podcast_gc2b58b848_640" />
+            app:srcCompat="@drawable/mike" />
 
     </RelativeLayout>
 
