@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/resource__" />
+        app:srcCompat="@drawable/eraser_g54e1a6277_640" />
 
     <ImageView
         android:id="@+id/imageView6"
