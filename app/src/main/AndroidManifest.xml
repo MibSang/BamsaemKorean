@@ -35,6 +35,10 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".WritingActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".WordActivity"
             android:exported="true">
         </activity>
