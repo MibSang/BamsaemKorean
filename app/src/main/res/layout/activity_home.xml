@@ -6,193 +6,240 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="96dp"
+        android:background="emty"
+        android:text="나의 단어장"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="55dp"
         android:layout_height="58dp"
-        app:srcCompat="?attr/actionModeCopyDrawable"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="657dp" />
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        app:srcCompat="?attr/actionModeCopyDrawable" />
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="55dp"
         android:layout_height="58dp"
-        app:srcCompat="@android:drawable/stat_notify_chat"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="657dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
 
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="55dp"
         android:layout_height="58dp"
-        app:srcCompat="?android:attr/actionModeFindDrawable"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="657dp" />
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+        app:srcCompat="?android:attr/actionModeFindDrawable" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="47dp"
         android:layout_height="46dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="476dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="47dp"
         android:layout_height="46dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="549dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="47dp"
         android:layout_height="46dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="403dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="89dp"
-        android:layout_height="47dp"
-        android:background="emty"
-        android:text="나의 단어장"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="28dp"
         android:background="emty"
         android:text="주제별 어희학습"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="253dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="28dp"
         android:background="emty"
         android:text="오늘의 단어"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="178dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="24dp"
         android:background="emty"
         android:text="카드 보관함"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="28dp"
         android:background="emty"
         android:text="게임"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="474dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="40dp"
         android:background="emty"
         android:text="밤을새워서라도 소개"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="547dp" />
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="130dp"
         android:layout_height="106dp"
-        app:srcCompat="@drawable/kakaotalk_20220328_101438041"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="32dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kakaotalk_20220328_101438041" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="47dp"
         android:layout_height="46dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="180dp" />
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="47dp"
         android:layout_height="46dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="255dp" />
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="47dp"
         android:layout_height="46dp"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
         android:background="?android:attr/listDivider"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="648dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="409dp"
         android:layout_height="1dp"
+        android:layout_marginTop="20dp"
         android:background="?android:attr/listDivider"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
         android:verticalScrollbarPosition="defaultPosition"
         android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_crop"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="87dp"
         tools:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="55dp"
         android:layout_height="58dp"
-        app:srcCompat="?attr/actionModeSelectAllDrawable"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="657dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:srcCompat="?attr/actionModeSelectAllDrawable" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="55dp"
         android:layout_height="58dp"
-        app:srcCompat="@android:drawable/btn_star_big_off"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="657dp" />
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
