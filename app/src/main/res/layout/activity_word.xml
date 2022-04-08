@@ -61,7 +61,7 @@
         android:fontFamily="sans-serif"
         android:text="프랑스"
         android:textAlignment="center"
-        android:textSize="27"
+        android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +114,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/voice_activity_button"
         android:layout_width="54dp"
         android:layout_height="53dp"
         android:layout_marginTop="8dp"
@@ -133,12 +133,12 @@
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
+        android:id="@+id/writing_activity_button"
         android:layout_width="54dp"
         android:layout_height="53dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton16"
+        app:layout_constraintStart_toEndOf="@+id/voice_activity_button"
         app:layout_constraintTop_toTopOf="@+id/space"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 

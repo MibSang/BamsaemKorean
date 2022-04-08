@@ -7,154 +7,103 @@
     android:background="@color/blue"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="416dp"
-        android:layout_height="296dp"
-        android:layout_marginTop="390dp"
-        android:background="@color/sec_blue"
-        android:orientation="horizontal"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Land_name">
-
-        <Button
-            android:id="@+id/Compare_voice"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="142dp"
-            android:layout_marginTop="178dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="38dp"
-            android:background="@color/teal_200"
-            android:drawableLeft="@android:drawable/ic_lock_silent_mode_off"
-            android:text="음성인식비교"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="75dp"
-            android:layout_height="85dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="154dp"
-            android:layout_marginEnd="280dp"
-            android:layout_marginBottom="12dp"
-            android:background="@null"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/mike" />
-
-    </RelativeLayout>
-
     <TextView
-        android:id="@+id/Land_name"
-        android:layout_width="172dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="100dp"
-        android:autoSizeTextType="uniform"
+        android:id="@+id/land_name"
+        android:layout_width="185dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="5dp"
         android:gravity="center"
         android:text="나라 이름"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:textColor="#3E2723"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="378dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="216dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="363dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="147dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="271dp"
+        android:id="@+id/button3"
+        android:layout_width="279dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="5dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/only_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Land_name"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/land_name" />
 
     <TextView
-        android:id="@+id/just_Text"
-        android:layout_width="123dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="249dp"
-        android:autoSizeTextType="uniform"
-        android:gravity="center"
+        android:id="@+id/only_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="1dp"
         android:text="원어민 발음듣기"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/read_land_name_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="412dp"
-        android:layout_height="9dp"
-        android:layout_marginTop="225dp"
-        android:background="@color/teal_200"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/just_Text"
-        app:layout_constraintVertical_bias="0.0">
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="160dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Land_name_to_speech"
-        app:srcCompat="@android:drawable/presence_audio_busy" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <ImageButton
-        android:id="@+id/Land_name_to_speech"
-        android:layout_width="72dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginEnd="170dp"
+        android:id="@+id/read_land_name_button"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="264dp"
         android:background="@android:color/transparent"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/just_Text"
-        app:srcCompat="@drawable/speaker_gcae3a4474_640" />
+        app:layout_constraintTop_toBottomOf="@+id/only_text"
+        app:srcCompat="@drawable/audio_button" />
+
+    <Button
+        android:id="@+id/compare_voice"
+        android:layout_width="149dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@android:drawable/stat_sys_headset"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/record_button" />
+
+    <ImageButton
+        android:id="@+id/record_button"
+        android:layout_width="95dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/compare_voice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mike_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
