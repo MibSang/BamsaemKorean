@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/number_1"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="379dp" />
+        tools:layout_editor_absoluteY="359dp" />
 
     <ImageView
         android:id="@+id/imageView9"
