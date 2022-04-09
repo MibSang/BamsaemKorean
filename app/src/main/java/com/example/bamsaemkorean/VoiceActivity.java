@@ -2,6 +2,7 @@ package com.example.bamsaemkorean;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -24,6 +25,8 @@ public class VoiceActivity extends AppCompatActivity {
         read_land_name_button = findViewById((R.id.read_land_name_button)); // 버튼 누를 시 Land_name(나라이름) 텍스트를 읽어줌
         compare_voice = findViewById(R.id.compare_voice); // 기준 발음과 비슷한지 비교해주는 버튼
         record_button = findViewById(R.id.record_button); // 녹음 버튼
+
+
 
     }
 }

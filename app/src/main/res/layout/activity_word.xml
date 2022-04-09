@@ -9,13 +9,11 @@
         android:id="@+id/divider5"
         android:layout_width="415dp"
         android:layout_height="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/just_Text" />
 
     <View
         android:id="@+id/divider3"
@@ -72,9 +70,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="92dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/just_Text"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider3"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -83,35 +80,34 @@
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
         android:layout_marginTop="16dp"
         android:rotationY="180"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toEndOf="@+id/just_Text"
         app:layout_constraintTop_toBottomOf="@+id/divider3"
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="256dp"
-        android:layout_height="226dp"
-        android:layout_marginBottom="272dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="368dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
+        android:id="@+id/writing_activity_button"
         android:layout_width="54dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton16"
+        app:layout_constraintStart_toEndOf="@+id/voice_activity_button"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
@@ -125,7 +121,7 @@
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/voice_activity_button"
         android:layout_width="54dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
