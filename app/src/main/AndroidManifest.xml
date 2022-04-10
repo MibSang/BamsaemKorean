@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".VoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Onlystt"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
@@ -27,25 +33,19 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".VoiceActivity"
-            android:exported="true">
-        </activity>
-        <activity
             android:name=".WritingActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".WordActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
