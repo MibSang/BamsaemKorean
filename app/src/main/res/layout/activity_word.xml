@@ -104,14 +104,14 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
+        android:id="@+id/writing_activity_button"
         android:layout_width="54dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton16"
+        app:layout_constraintStart_toEndOf="@+id/voice_activity_button"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
@@ -125,7 +125,7 @@
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/voice_activity_button"
         android:layout_width="54dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
