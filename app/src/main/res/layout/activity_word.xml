@@ -51,7 +51,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kakaotalk_20220328_101438041" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/just_Text"

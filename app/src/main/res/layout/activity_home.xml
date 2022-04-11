@@ -1,259 +1,374 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/drawer_layout">
 
-    <View
-        android:id="@+id/divider11"
-        android:layout_width="409dp"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="192dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:foregroundTint="@color/material_dynamic_primary80"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <include layout="@layout/activity_navigation"/>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFEF1"
+        tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/divider10"
-        android:layout_width="409dp"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="472dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:foregroundTint="@color/material_dynamic_primary80"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="92dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-    <View
-        android:id="@+id/divider9"
-        android:layout_width="409dp"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="380dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:foregroundTint="@color/material_dynamic_primary80"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:verticalScrollbarPosition="defaultPosition"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/divider7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/free_icon_font_menu_burger_3917215"
+            app:tint="#D8BE6E"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-    <View
-        android:id="@+id/divider8"
-        android:layout_width="409dp"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="96dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:foregroundTint="@color/material_dynamic_primary80"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="80dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#6C5F35"
+            android:foregroundTint="#6C5F35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/divider7"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="8dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:foregroundTint="@color/material_dynamic_primary80"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7">
 
-    <Button
-        android:id="@+id/category_study_button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
-        android:text="주제별 어휘학습"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="55dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
-        app:srcCompat="?attr/actionModeCopyDrawable" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D5D5D5">
 
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="55dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:srcCompat="@android:drawable/stat_notify_chat" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1sp"
+                        android:background="#FFFFFF"
+                        android:padding="15sp">
 
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="55dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
-        app:srcCompat="?android:attr/actionModeFindDrawable" />
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:padding="15sp"
+                            app:srcCompat="@drawable/free_icon_font_checkbox_3917090"
+                            app:tint="#FF0000" />
 
-    <Button
-        android:id="@+id/category_study_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
-        android:text="나의 단어장"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.034" />
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65sp"
+                            android:padding="20sp"
+                            android:text="오늘의 단어"
+                            android:textSize="20sp" />
+                    </TableRow>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="오늘의 단어"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
+                    <TableRow
+                        android:id="@+id/category_study_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1sp"
+                        android:background="#FFFFFF"
+                        android:padding="15sp">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="카드 보관함"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:padding="15sp"
+                            app:srcCompat="@drawable/free_icon_font_list_3917040"
+                            app:tint="#FF9800" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="게임"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65sp"
+                            android:padding="20sp"
+                            android:text="주제별 어휘학습"
+                            android:textSize="20sp" />
+                    </TableRow>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="밤을새워서라도 소개"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1sp"
+                        android:background="#FFFFFF"
+                        android:padding="15sp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="92dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kakaotalk_20220328_101438041" />
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:padding="15sp"
+                            app:srcCompat="@drawable/free_icon_font_pencil_3917376"
+                            app:tint="#FFEB3B" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="16dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65sp"
+                            android:padding="20sp"
+                            android:text="나의 단어장"
+                            android:textSize="20sp" />
+                    </TableRow>
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="409dp"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="284dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:foregroundTint="@color/material_dynamic_primary80"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1sp"
+                        android:background="#FFFFFF"
+                        android:padding="15sp">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:verticalScrollbarPosition="defaultPosition"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_crop"
-        tools:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:padding="15sp"
+                            app:srcCompat="@drawable/free_icon_font_edit_3917549"
+                            app:tint="#8BC34A" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="55dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:srcCompat="?attr/actionModeSelectAllDrawable" />
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65sp"
+                            android:padding="20sp"
+                            android:text="카드 보관함"
+                            android:textSize="20sp" />
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="55dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_off" />
+                    </TableRow>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1sp"
+                        android:background="#FFFFFF"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:padding="15sp"
+                            app:srcCompat="@drawable/free_icon_font_comment_heart_5070425"
+                            app:tint="#2196F3" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65sp"
+                            android:padding="20sp"
+                            android:text="게임"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1sp"
+                        android:background="#FFFFFF"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="65sp"
+                            android:layout_height="65sp"
+                            android:padding="15sp"
+                            app:srcCompat="@drawable/free_icon_font_user_3917688"
+                            app:tint="#673AB7" />
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65sp"
+                            android:padding="20sp"
+                            android:text="밤을새워서라도 소개"
+                            android:textSize="20sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="80dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#6C5F35"
+            android:foregroundTint="#6C5F35"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="30sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton9"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:srcCompat="@drawable/free_icon_font_list_check_3914392"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="30sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton9"
+            app:layout_constraintStart_toEndOf="@+id/imageButton10"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:srcCompat="@drawable/free_icon_font_home_3917743"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="30sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:srcCompat="?attr/actionModeCopyDrawable"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="30sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+            app:layout_constraintStart_toEndOf="@+id/imageButton8"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:srcCompat="@android:drawable/stat_notify_chat"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="30sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+            app:layout_constraintStart_toEndOf="@+id/imageButton11"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="?android:attr/actionModeFindDrawable"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="단계선택"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton11"
+            app:layout_constraintStart_toStartOf="@+id/imageButton11" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="검색"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+            app:layout_constraintStart_toEndOf="@+id/imageButton11" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="홈"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+            app:layout_constraintStart_toStartOf="@+id/imageButton8" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="게시판"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+            app:layout_constraintStart_toEndOf="@+id/imageButton8" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="상점"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageButton7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
