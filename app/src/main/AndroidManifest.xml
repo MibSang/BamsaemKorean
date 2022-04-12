@@ -20,9 +20,6 @@
             android:name=".VoiceActivity"
             android:exported="false" />
         <activity
-            android:name=".Onlystt"
-            android:exported="false" />
-        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
