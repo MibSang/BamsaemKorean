@@ -4,20 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageView;
 
-public class CategoryActivity extends AppCompatActivity {
-    ImageView world_category_button;
+public class WordActivity extends AppCompatActivity {
+    ImageView voice_activity_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.activity_word);
 
-        world_category_button = (ImageView) findViewById(R.id.world_category_button);
+        voice_activity_button = (ImageView) findViewById(R.id.voice_activity_button);
 
-        world_category_button.setOnClickListener(view -> {
+        voice_activity_button.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), VoiceActivity.class);
             startActivity(intent);
         });
