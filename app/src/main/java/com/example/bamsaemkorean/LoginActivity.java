@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         cancel_button = (Button) findViewById(R.id.cancel_button);
 
         ok_button.setOnClickListener(v -> {
-            if (id_text.getText().toString().equals("tester") && pw_text.getText().toString().equals("password123")) {
+            if (id_text.getText().toString().equals("test") && pw_text.getText().toString().equals("test")) {
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
             }
