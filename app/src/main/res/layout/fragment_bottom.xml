@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEF1"
+    tools:context=".BottomFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton40"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/free_icon_font_list_check_3914392"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton42"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton41"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="25dp"
+            android:scaleType="centerCrop"
+            android:src="?android:attr/actionModeFindDrawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton43"
+            app:layout_constraintStart_toEndOf="@+id/imageButton44"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton44"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="25dp"
+            android:scaleType="centerCrop"
+            android:src="?attr/actionModeCopyDrawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton43"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/free_icon_font_home_3917743"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton42"
+            app:layout_constraintStart_toEndOf="@+id/imageButton41"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton42"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#00FFFFFF"
+            android:padding="25dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/stat_notify_chat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton40"
+            app:layout_constraintStart_toEndOf="@+id/imageButton43"
+            app:tint="#C6AE65"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="단계선택"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton41"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="검색"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton41"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton41"
+            app:layout_constraintStart_toStartOf="@+id/imageButton41" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="상점"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton40"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton40"
+            app:layout_constraintStart_toStartOf="@+id/imageButton40" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="게시판"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton42"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton42"
+            app:layout_constraintStart_toEndOf="@+id/imageButton43" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="홈"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton43"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton43"
+            app:layout_constraintStart_toStartOf="@+id/imageButton43" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
