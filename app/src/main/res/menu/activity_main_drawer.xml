@@ -6,11 +6,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/free_icon_font_unlock_3917656"
+            android:icon="@drawable/logout_image"
             android:title="로그아웃" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/free_icon_font_sign_in_3917168"
+            android:icon="@drawable/exit_image"
             android:title="종료" />
     </group>
 </menu>

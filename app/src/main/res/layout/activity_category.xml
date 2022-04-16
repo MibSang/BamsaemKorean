@@ -14,7 +14,7 @@
         android:layout_marginTop="80dp"
         android:background="@color/brown_black"
         android:padding="3dp"
-        android:text="주제별 어휘학습"
+        android:text="@string/home_category"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="26sp"
@@ -68,7 +68,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_globe_3917538"
+                        app:srcCompat="@drawable/country_image"
                         app:tint="#FF9800" />
 
                     <ImageView
@@ -76,7 +76,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_paw_5068966"
+                        app:srcCompat="@drawable/natural_environment_image"
                         app:tint="#F44336" />
                 </TableRow>
 
@@ -105,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="자연환경"
+                        android:text="@string/category_natural_environment"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -121,7 +121,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_computer_3917430"
+                        app:srcCompat="@drawable/popular_culture_image"
                         app:tint="#CDDC39" />
 
                     <ImageView
@@ -129,7 +129,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_cake_birthday_5527868"
+                        app:srcCompat="@drawable/special_day_image"
                         app:tint="#B64CC8" />
                 </TableRow>
 
@@ -148,7 +148,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="대중문화"
+                        android:text="@string/category_popular_culture"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -158,7 +158,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="특별한 날"
+                        android:text="@string/category_special_day"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -174,7 +174,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_calendar_3917244"
+                        app:srcCompat="@drawable/life_plan_image"
                         app:tint="#974F4F" />
 
                     <ImageView
@@ -182,7 +182,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_user_3917688"
+                        app:srcCompat="@drawable/introduction_and_daily_life_image"
                         app:tint="#009688" />
                 </TableRow>
 
@@ -201,7 +201,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="인생계획"
+                        android:text="@string/category_life_plan"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -211,7 +211,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="일상생활"
+                        android:text="@string/category_daily_life"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -227,7 +227,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_comment_3916638"
+                        app:srcCompat="@drawable/daily_conversation_image"
                         app:tint="#673AB7" />
 
                     <ImageView
@@ -235,7 +235,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/free_icon_font_recycle_5068954"
+                        app:srcCompat="@drawable/environmental_protection_image"
                         app:tint="#8BC34A" />
                 </TableRow>
 
@@ -254,7 +254,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="일상대화"
+                        android:text="@string/category_daily_conversation"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -264,7 +264,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="환경보호"
+                        android:text="@string/category_environmental_protection"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />

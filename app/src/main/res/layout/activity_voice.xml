@@ -28,7 +28,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/speaker_filled_audio_tool"
+            app:srcCompat="@drawable/recording_listen_image"
             app:tint="#611F1F"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -40,7 +40,7 @@
             android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/cancel"
+            app:srcCompat="@drawable/cancel_image"
             app:tint="@color/black" />
 
         <TextView
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:text="한국어 발음듣기"
+            android:text="@string/voice_listening_korean"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/read_land_name_button"
             app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +114,7 @@
             android:layout_marginBottom="30dp"
             android:backgroundTint="#806821"
             android:drawableLeft="@android:drawable/stat_sys_headset"
-            android:text="녹음 재생"
+            android:text="@string/voice_play_record"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -135,7 +135,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/microphone"
+            app:srcCompat="@drawable/record_button_image"
             app:tint="#806821"
             tools:ignore="SpeakableTextPresentCheck" />
 
