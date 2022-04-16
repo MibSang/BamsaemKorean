@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,6 +59,17 @@ public class BottomFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        /*
+        View v = getView();
+        ImageButton stageButton = (ImageButton) v.findViewById(R.id.imageButton44);
+        ImageButton searchButton = (ImageButton) v.findViewById(R.id.imageButton41);
+        ImageButton mainButton = (ImageButton) v.findViewById(R.id.imageButton43);
+        ImageButton boardButton = (ImageButton) v.findViewById(R.id.imageButton42);
+        ImageButton shopButton = (ImageButton) v.findViewById(R.id.imageButton40);
+        */
+
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_bottom, container, false);
     }
