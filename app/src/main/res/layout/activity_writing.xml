@@ -96,7 +96,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/eraser"
+        app:srcCompat="@drawable/eraser_image"
         app:tint="#937F40" />
 
     <ImageView
@@ -106,7 +106,7 @@
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:srcCompat="@drawable/free_icon_font_pencil_3917484"
+        app:srcCompat="@drawable/writing_button_image"
         app:tint="#937F40" />
 
     <TextView
