@@ -55,7 +55,7 @@
                             android:layout_width="65sp"
                             android:layout_height="65sp"
                             android:padding="15sp"
-                            app:srcCompat="@drawable/free_icon_font_checkbox_3917090"
+                            app:srcCompat="@drawable/word_of_the_day_image"
                             app:tint="#FF0000" />
 
                         <TextView
@@ -63,7 +63,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="65sp"
                             android:padding="20sp"
-                            android:text="오늘의 단어"
+                            android:text="@string/home_word_of_the_day"
                             android:textSize="20sp" />
                     </TableRow>
 
@@ -80,7 +80,7 @@
                             android:layout_width="65sp"
                             android:layout_height="65sp"
                             android:padding="15sp"
-                            app:srcCompat="@drawable/free_icon_font_list_3917040"
+                            app:srcCompat="@drawable/category_image"
                             app:tint="#FF9800" />
 
                         <TextView
@@ -88,7 +88,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="65sp"
                             android:padding="20sp"
-                            android:text="주제별 어휘학습"
+                            android:text="@string/home_category"
                             android:textSize="20sp" />
                     </TableRow>
 
@@ -104,7 +104,7 @@
                             android:layout_width="65sp"
                             android:layout_height="65sp"
                             android:padding="15sp"
-                            app:srcCompat="@drawable/free_icon_font_pencil_3917376"
+                            app:srcCompat="@drawable/my_vocabulary_image"
                             app:tint="#FFEB3B" />
 
                         <TextView
@@ -112,7 +112,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="65sp"
                             android:padding="20sp"
-                            android:text="나의 단어장"
+                            android:text="@string/home_my_vocabulary"
                             android:textSize="20sp" />
                     </TableRow>
 
@@ -128,7 +128,7 @@
                             android:layout_width="65sp"
                             android:layout_height="65sp"
                             android:padding="15sp"
-                            app:srcCompat="@drawable/free_icon_font_edit_3917549"
+                            app:srcCompat="@drawable/card_holder_image"
                             app:tint="#8BC34A" />
 
                         <TextView
@@ -136,7 +136,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="65sp"
                             android:padding="20sp"
-                            android:text="카드 보관함"
+                            android:text="@string/home_card_holder"
                             android:textSize="20sp" />
 
                     </TableRow>
@@ -153,7 +153,7 @@
                             android:layout_width="65sp"
                             android:layout_height="65sp"
                             android:padding="15sp"
-                            app:srcCompat="@drawable/free_icon_font_comment_heart_5070425"
+                            app:srcCompat="@drawable/game_image"
                             app:tint="#2196F3" />
 
                         <TextView
@@ -161,7 +161,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="65sp"
                             android:padding="20sp"
-                            android:text="게임"
+                            android:text="@string/home_game"
                             android:textSize="20sp" />
 
                     </TableRow>
@@ -178,7 +178,7 @@
                             android:layout_width="65sp"
                             android:layout_height="65sp"
                             android:padding="15sp"
-                            app:srcCompat="@drawable/free_icon_font_user_3917688"
+                            app:srcCompat="@drawable/introduction_and_daily_life_image"
                             app:tint="#673AB7" />
 
                         <TextView
@@ -186,7 +186,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="65sp"
                             android:padding="20sp"
-                            android:text="밤을새워서라도 소개"
+                            android:text="@string/home_introduction"
                             android:textSize="20sp" />
                     </TableRow>
                 </TableLayout>
