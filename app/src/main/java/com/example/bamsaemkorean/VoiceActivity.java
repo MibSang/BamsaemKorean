@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 
-public class VoiceActivity extends AppCompatActivity {
+public class VoiceActivity extends AppCompatActivity{
 
     Intent intent;
     SpeechRecognizer mRecognizer;
