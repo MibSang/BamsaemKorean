@@ -30,6 +30,7 @@ import java.util.Locale;
 
 public class VoiceActivity extends AppCompatActivity{
 
+    private static final int RECORD_AUDIO_PERMISSION_CODE = 0;
     Intent intent;
     SpeechRecognizer mRecognizer;
     TextView land_name;
@@ -57,10 +58,19 @@ public class VoiceActivity extends AppCompatActivity{
         intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,getPackageName());
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ko-KR");
 
+        mRecognizer=SpeechRecognizer.createSpeechRecognizer(this);
+        mRecognizer.setRecognitionListener(listener);
+
         record_button.setOnClickListener(v -> {
-            mRecognizer=SpeechRecognizer.createSpeechRecognizer(this);
-            mRecognizer.setRecognitionListener(listener);
-            mRecognizer.startListening(intent);
+            if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, RECORD_AUDIO_PERMISSION_CODE);
+            } else {
+                try {
+                    mRecognizer.startListening(intent);
+                } catch(SecurityException e) {
+                    e.printStackTrace();
+                }
+            }
         });
 
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener(){
@@ -95,6 +105,9 @@ public class VoiceActivity extends AppCompatActivity{
         }
         super.onDestroy();
     }
+
+    private Activity getActivity() { return this; }
+    private Context getContext() { return this; }
 
     private RecognitionListener listener = new RecognitionListener() {
         @Override
