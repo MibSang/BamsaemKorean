@@ -66,7 +66,7 @@ public class VoiceActivity extends AppCompatActivity{
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener(){
             @Override
             public void onInit(int status) {
-                if(status!=android.speech.tts.TextToSpeech.ERROR) {
+                if(status!=TextToSpeech.ERROR) {
                     tts.setLanguage(Locale.KOREAN);
                 }
             }
