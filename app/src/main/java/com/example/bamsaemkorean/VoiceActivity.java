@@ -1,5 +1,8 @@
 package com.example.bamsaemkorean;
 
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
+import android.os.Environment;
 import android.speech.tts.TextToSpeech;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,11 +27,14 @@ import android.widget.TextView;
 import android.widget.ImageButton;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
 
-public class VoiceActivity extends AppCompatActivity{
+public class VoiceActivity extends AppCompatActivity {
 
     private static final int RECORD_AUDIO_PERMISSION_CODE = 0;
     Intent intent;
@@ -37,8 +43,13 @@ public class VoiceActivity extends AppCompatActivity{
     TextView stt_result;
     ImageButton read_land_name_button;
     ImageButton record_button;
-    Button compare_voice;
+    Button voice_play;
+    Button voice_record;
     TextToSpeech tts;
+
+    MediaRecorder recorder;
+    String filename;
+    MediaPlayer player;
 
 
     final int PERMISSION = 1;
@@ -51,6 +62,13 @@ public class VoiceActivity extends AppCompatActivity{
             // 퍼미션 체크
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO},PERMISSION);
         }
+        permissionCheck();
+
+        File sdcard = Environment.getExternalStorageDirectory();  //sd카드 접근
+        File file = new File(sdcard, "recorded.mp4");
+        filename = file.getAbsolutePath();
+        Log.d("VoiceActivity", "저장할 파일 명 : " + filename);
+
         stt_result = (TextView)findViewById(R.id.stt_result);
         record_button = (ImageButton) findViewById(R.id.record_button);
 
@@ -61,15 +79,37 @@ public class VoiceActivity extends AppCompatActivity{
         mRecognizer=SpeechRecognizer.createSpeechRecognizer(this);
         mRecognizer.setRecognitionListener(listener);
 
-        record_button.setOnClickListener(v -> {
-            if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, RECORD_AUDIO_PERMISSION_CODE);
-            } else {
-                try {
-                    mRecognizer.startListening(intent);
-                } catch(SecurityException e) {
-                    e.printStackTrace();
+        record_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //recordAudio();
+                if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, RECORD_AUDIO_PERMISSION_CODE);
+                } else {
+                    try {
+                        mRecognizer.startListening(intent);
+                    } catch (SecurityException e) {
+                        e.printStackTrace();
+                    }
                 }
+            }
+        });
+
+        voice_record = (Button)findViewById(R.id.voice_record);
+
+        voice_record.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                recordAudio();
+            }
+        });
+
+        voice_play = (Button)findViewById(R.id.voice_play);
+
+        voice_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playAudio();
             }
         });
 
@@ -94,6 +134,53 @@ public class VoiceActivity extends AppCompatActivity{
                 tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"id1");
             }
         });
+    }
+
+    private void recordAudio() {
+        recorder = new MediaRecorder();
+        recorder.setAudioSource(MediaRecorder.AudioSource.MIC); // 어디에서 음성 데이터를 받을 것인지
+        recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4); // 압축 형식 설정
+        recorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
+
+        recorder.setOutputFile(filename);
+
+        try {
+            recorder.prepare();
+            recorder.start();
+
+            Toast.makeText(this, "녹음 시작됨.", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void playAudio() {
+        try {
+            closePlayer();
+
+            player = new MediaPlayer();
+            player.setDataSource(filename);
+            player.prepare();
+            player.start();
+
+            Toast.makeText(this, "재생 시작됨.", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void closePlayer() {
+        if (player != null) {
+            player.release();
+            player = null;
+        }
+    }
+
+    public void permissionCheck(){
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO}, 1);
+        }
     }
 
     @Override
