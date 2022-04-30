@@ -35,8 +35,7 @@ public class WritingActivity extends AppCompatActivity {
         MyView myView = (MyView) findViewById(R.id.draw);
 
         writing_back_button.setOnClickListener(view->{
-            Intent intent = new Intent(getApplicationContext(), WordActivity.class);
-            startActivity(intent);
+            finish();
         });
 
         word_erase_button.setOnClickListener(new View.OnClickListener() {

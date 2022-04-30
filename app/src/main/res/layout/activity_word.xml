@@ -63,7 +63,7 @@
             android:background="?android:attr/listDivider"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/just_Text" />
+            app:layout_constraintTop_toBottomOf="@+id/word_name" />
 
         <View
             android:id="@+id/divider3"
@@ -79,12 +79,11 @@
             app:layout_constraintVertical_bias="0.1" />
 
         <TextView
-            android:id="@+id/just_Text"
+            android:id="@+id/word_name"
             android:layout_width="99dp"
             android:layout_height="39dp"
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif"
-            android:text="프랑스"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textStyle="bold"
@@ -114,7 +113,7 @@
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/word_image"
             android:layout_width="0dp"
             android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -183,19 +182,17 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:padding="5dp"
-            android:text="프랑스 공화국(프랑스어: République française, 영어: French Republic) 약칭 프랑스(프랑스어: France)는 서유럽의 본토와 남아메리카의 프랑스령 기아나를 비롯 대륙에 걸쳐 있는 해외 레지옹과 해외 영토 국가로서 EU 소속 국가 중 영토가 가장 넓다. 수도는 파리이며, 프랑스 본토는 남북으로는 지중해에서 영국 해협과 북해까지, 동서로는 라인강에서 대서양에 이른다. 그 지형적 모양으로 인해 프랑스인들은 종종 이곳을 L'Hexagone(육각형)이라고 부른다. 주요 도시로는 파리, 마르세유, 리옹, 툴루즈, 니스, 낭트, 몽펠리에, 비시 등이 있다."
             app:layout_constraintBottom_toTopOf="@+id/divider6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/word_name_sec" />
 
         <TextView
-            android:id="@+id/textView7"
-            android:layout_width="84dp"
+            android:id="@+id/word_name_sec"
+            android:layout_width="100dp"
             android:layout_height="54dp"
             android:layout_marginTop="10dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="프랑스"
             android:textAlignment="center"
             android:textColor="#87702D"
             android:textSize="24sp"
@@ -203,19 +200,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.045"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            app:layout_constraintTop_toBottomOf="@+id/word_image" />
 
         <TextView
             android:id="@+id/textView12"
-            android:layout_width="37dp"
+            android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
             android:layout_marginBottom="5dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="명사"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/textView"
-            app:layout_constraintStart_toEndOf="@+id/textView7" />
+            app:layout_constraintStart_toEndOf="@+id/word_name_sec" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
