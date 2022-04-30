@@ -1,321 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFEF1"
-    tools:context=".CategoryActivity">
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:background="@color/brown_black"
-        android:padding="3dp"
-        android:text="@string/home_category"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFEF1"
+        tools:context=".CategoryActivity">
 
-    <ImageView
-        android:id="@+id/category_back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
-        android:background="@color/yellow_brown"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="SpeakableTextPresentCheck">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@color/brown_black"
+            android:padding="3dp"
+            android:text="@string/home_category"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
-            <TableLayout
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/yellow_brown"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <TableRow
+                <TableLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/category_country"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/country_image"
-                        app:tint="#FF9800" />
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
 
-                    <ImageView
-                        android:id="@+id/category_natural_environment"
+                        <ImageView
+                            android:id="@+id/world_category_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/country_image"
+                            app:tint="#FF9800" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/natural_environment_image"
+                            app:tint="#F44336" />
+
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/natural_environment_image"
-                        app:tint="#F44336" />
-                </TableRow>
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="30dp">
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_country"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_country"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_natural_environment"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_natural_environment"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp">
-
-                    <ImageView
-                        android:id="@+id/category_popular_culture"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/popular_culture_image"
-                        app:tint="#CDDC39" />
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
 
-                    <ImageView
-                        android:id="@+id/category_special_day"
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/popular_culture_image"
+                            app:tint="#CDDC39" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/special_day_image"
+                            app:tint="#B64CC8" />
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/special_day_image"
-                        app:tint="#B64CC8" />
-                </TableRow>
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="30dp">
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_popular_culture"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_popular_culture"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_special_day"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_special_day"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp">
-
-                    <ImageView
-                        android:id="@+id/category_life_plan"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/life_plan_image"
-                        app:tint="#974F4F" />
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
 
-                    <ImageView
-                        android:id="@+id/category_daily_life"
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/life_plan_image"
+                            app:tint="#974F4F" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/introduction_and_daily_life_image"
+                            app:tint="#009688" />
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/introduction_and_daily_life_image"
-                        app:tint="#009688" />
-                </TableRow>
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="30dp">
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_life_plan"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_life_plan"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_daily_life"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_daily_life"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp">
-
-                    <ImageView
-                        android:id="@+id/category_daily_conversation"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/daily_conversation_image"
-                        app:tint="#673AB7" />
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
 
-                    <ImageView
-                        android:id="@+id/category_environmental_protection"
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/daily_conversation_image"
+                            app:tint="#673AB7" />
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/environmental_protection_image"
+                            app:tint="#8BC34A" />
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/environmental_protection_image"
-                        app:tint="#8BC34A" />
-                </TableRow>
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="30dp">
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_daily_conversation"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_daily_conversation"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/category_environmental_protection"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
 
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/category_environmental_protection"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </TableRow>
+                </TableLayout>
 
-            </TableLayout>
+            </LinearLayout>
+        </ScrollView>
 
-        </LinearLayout>
-    </ScrollView>
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <fragment
-            android:id="@+id/category_bottom_fragment"
-            android:name="com.example.bamsaemkorean.BottomFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="0dp"
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout="@layout/fragment_bottom" />
-    </FrameLayout>
+            app:layout_constraintTop_toTopOf="@+id/divider8">
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+            <fragment
+                android:id="@+id/category_bottom_fragment"
+                android:name="com.example.bamsaemkorean.BottomFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_bottom" />
+        </FrameLayout>
 
-        <fragment
-            android:id="@+id/category_top_fragment"
-            android:name="com.example.bamsaemkorean.TopFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout="@layout/fragment_top" />
-    </FrameLayout>
+            app:layout_constraintTop_toTopOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <fragment
+                android:id="@+id/category_top_fragment"
+                android:name="com.example.bamsaemkorean.TopFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_top" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/activity_navigation" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
