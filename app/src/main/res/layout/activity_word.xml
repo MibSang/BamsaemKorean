@@ -1,214 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFA">
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFA">
 
-        <fragment
-            android:id="@+id/word_bottom_fragment"
-            android:name="com.example.bamsaemkorean.BottomFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="0dp"
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <fragment
+                android:id="@+id/word_bottom_fragment"
+                android:name="com.example.bamsaemkorean.BottomFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fragment
+                android:id="@+id/word_top_fragment"
+                android:name="com.example.bamsaemkorean.TopFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout="@layout/fragment_top" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_name" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#685B2E"
+            android:foregroundTint="#685B2E"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout="@layout/fragment_bottom" />
-    </FrameLayout>
+            app:layout_constraintVertical_bias="0.1" />
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/word_name"
+            android:layout_width="99dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
-        <fragment
-            android:id="@+id/word_top_fragment"
-            android:name="com.example.bamsaemkorean.TopFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="0dp"
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:rotationY="180"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/word_image"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5"
+            app:srcCompat="@drawable/team_logo_image" />
+
+        <ImageButton
+            android:id="@+id/writing_activity_button"
+            android:layout_width="54dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#4CAF50"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/voice_activity_button"
+            app:srcCompat="@drawable/writing_button_image"
+            app:tint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton18"
+            android:layout_width="54dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#CD6666"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+            app:tint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/voice_activity_button"
+            android:layout_width="54dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#2196F3"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+            app:layout_constraintStart_toEndOf="@+id/imageButton18"
+            app:srcCompat="@android:drawable/presence_audio_away"
+            app:tint="#FFFFFF"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#6C5F35"
+            android:foregroundTint="#6C5F35"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout="@layout/fragment_top" />
-    </FrameLayout>
+            app:layout_constraintVertical_bias="0.9" />
 
-    <View
-        android:id="@+id/divider5"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="5dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/just_Text" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_name_sec" />
 
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="80dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="#685B2E"
-        android:foregroundTint="#685B2E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/word_name_sec"
+            android:layout_width="100dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            android:textColor="#87702D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_image" />
 
-    <TextView
-        android:id="@+id/just_Text"
-        android:layout_width="99dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="5dp"
-        android:fontFamily="sans-serif"
-        android:text="프랑스"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/word_name_sec" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:rotationY="180"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <include layout="@layout/activity_navigation" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="226dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider5"
-        app:srcCompat="@drawable/team_logo_image" />
-
-    <ImageButton
-        android:id="@+id/writing_activity_button"
-        android:layout_width="54dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:backgroundTint="#4CAF50"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/speak_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/voice_activity_button"
-        app:srcCompat="@drawable/writing_button_image"
-        tools:ignore="SpeakableTextPresentCheck"
-        app:tint="#FFFFFF" />
-
-    <ImageButton
-        android:id="@+id/speak_button"
-        android:layout_width="54dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="4dp"
-        android:backgroundTint="#CD6666"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/explain_paragraph"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        tools:ignore="SpeakableTextPresentCheck"
-        app:tint="#FFFFFF" />
-
-    <ImageButton
-        android:id="@+id/voice_activity_button"
-        android:layout_width="54dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:backgroundTint="#2196F3"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/speak_button"
-        app:layout_constraintStart_toEndOf="@+id/speak_button"
-        app:srcCompat="@android:drawable/presence_audio_away"
-        tools:ignore="SpeakableTextPresentCheck"
-        app:tint="#FFFFFF" />
-
-    <View
-        android:id="@+id/divider6"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginBottom="80dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="#6C5F35"
-        android:foregroundTint="#6C5F35"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/explain_paragraph"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="5dp"
-        android:text="프랑스 공화국(프랑스어: République française, 영어: French Republic) 약칭 프랑스(프랑스어: France)는 서유럽의 본토와 남아메리카의 프랑스령 기아나를 비롯 대륙에 걸쳐 있는 해외 레지옹과 해외 영토 국가로서 EU 소속 국가 중 영토가 가장 넓다. 수도는 파리이며, 프랑스 본토는 남북으로는 지중해에서 영국 해협과 북해까지, 동서로는 라인강에서 대서양에 이른다. 그 지형적 모양으로 인해 프랑스인들은 종종 이곳을 L'Hexagone(육각형)이라고 부른다. 주요 도시로는 파리, 마르세유, 리옹, 툴루즈, 니스, 낭트, 몽펠리에, 비시 등이 있다."
-        app:layout_constraintBottom_toTopOf="@+id/divider6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/country_name" />
-
-    <TextView
-        android:id="@+id/country_name"
-        android:layout_width="84dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="프랑스"
-        android:textAlignment="center"
-        android:textColor="#87702D"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="37dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="명사"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/explain_paragraph"
-        app:layout_constraintStart_toEndOf="@+id/country_name" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

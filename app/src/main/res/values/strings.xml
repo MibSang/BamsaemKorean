@@ -6,6 +6,200 @@
         <item>中文</item>
         <item>日本語</item>
     </string-array>
+
+    <string-array name="word_category">
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>country_data</item>
+        <item>life_plan_data</item>
+        <item>life_plan_data</item>
+        <item>life_plan_data</item>
+        <item>daily_life_data</item>
+        <item>daily_life_data</item>
+        <item>daily_life_data</item>
+        <item>daily_conversation_data</item>
+        <item>daily_conversation_data</item>
+        <item>daily_conversation_data</item>
+        <item>environmental_protection_data</item>
+        <item>environmental_protection_data</item>
+        <item>environmental_protection_data</item>
+        <item>natural_environment_data</item>
+        <item>natural_environment_data</item>
+        <item>natural_environment_data</item>
+        <item>popular_culture_data</item>
+        <item>popular_culture_data</item>
+        <item>popular_culture_data</item>
+        <item>special_day_data</item>
+        <item>special_day_data</item>
+        <item>special_day_data</item>
+    </string-array>
+
+    <string-array name="word_name">
+        <item>대한민국</item>
+        <item>프랑스</item>
+        <item>독일</item>
+        <item>러시아</item>
+        <item>몽골</item>
+        <item>미국</item>
+        <item>베트남</item>
+        <item>영국</item>
+        <item>일본</item>
+        <item>중국</item>
+        <item>캐나다</item>
+        <item>케냐</item>
+        <item>태국</item>
+        <item>호주</item>
+        <item>취업</item>
+        <item>결혼</item>
+        <item>여행</item>
+        <item>운동</item>
+        <item>공부</item>
+        <item>식사</item>
+        <item>안녕</item>
+        <item>미안하다</item>
+        <item>반갑다</item>
+        <item>쓰레기통</item>
+        <item>분리수거</item>
+        <item>재활용</item>
+        <item>산</item>
+        <item>바다</item>
+        <item>하늘</item>
+        <item>미술</item>
+        <item>게임</item>
+        <item>음악</item>
+        <item>어린이날</item>
+        <item>어버이날</item>
+        <item>스승의날</item>
+    </string-array>
+
+    <string-array name="word_pos">
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>감탄사</item>
+        <item>명사</item>
+        <item>형용사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+    </string-array>
+
+    <string-array name="word_explanation">
+        <item>아시아 대륙 동쪽에 있는 한반도와 그 부속 도서로 이루어진 공화국. 아르오케이 또는 코리아라고도 불린다. 기원전 2333년에 성립된 고조선에서부터 고구려ㆍ백제ㆍ신라의 삼국 시대를 거쳐 통일 신라ㆍ고려ㆍ조선으로 이어져 오다가 1910년에 일제의 침략으로 강제 합병 되었으나, 1945년에 제이 차 세계 대전이 끝나면서 독립하였다. 1948년에 남한만의 총선으로 민주 공화국이 수립되었다. 1950년에 북한이 6ㆍ25 전쟁을 일으킴으로써 휴전선을 사이에 두고 국토 분단이 고착화되었다. 주민의 대부분은 황색 인종인 한민족이며, 언어는 알타이어계에 속하는 한국어이고 문자는 한글을 쓴다. 수도는 서울, 면적은 22만 1336㎢, 남한은 9만 9313㎢.</item>
+        <item>유럽 서부에 있는 공화국. 민족 대이동의 결과 5세기에 프랑크 왕국이 성립하여 백 년 전쟁 이후 왕권이 신장되었고, 17~18세기에는 유럽의 지도적인 위치에 군림하였다. 1789년의 혁명으로 공화정이 성립되었으며 1958년 이후 드골에 의한 제오 공화정을 거쳐 지금에 이른다. 기계ㆍ귀금속ㆍ섬유ㆍ화학ㆍ건축 공업이 발달하였고 유럽 굴지의 농업국이며, 주민은 라틴계로 대부분이 가톨릭교도이다. 수도는 파리, 면적은 55만 1458㎢.</item>
+        <item>유럽 중부에 있는 나라. 843년에 동프랑크 왕국을 세워 962년에 신성 로마 제국으로 발전하였고, 1871년에 프로이센에 의하여 통일되어 게르만족을 중심으로 하는 독일 제국이 완성되었다. 그 후 제일 차ㆍ제이 차 세계 대전의 패배로 1949년에 동서로 분단되었다가 1990년 10월에 독일 연방 공화국으로 통일되었다. 주민은 대부분 튜턴족(Teuton族)이며, 주요 언어는 독일어이다. 수도는 베를린, 면적은 35만 6734㎢.</item>
+        <item>유럽 대륙의 동부에서 시베리아에 걸쳐 있는 나라. 862년에 노브고로드 공국에서 시작하여, 차르의 전제 정치가 계속되다가 1917년의 2월 혁명으로 소비에트 사회주의 공화국 연방이 되었다. 1990년대에 들어 소비에트 사회주의 공화국 연방이 해체되면서 독립국이 되었다. 주민의 대부분은 슬라브 민족이고 주요 언어는 슬라브어이다. 수도는 모스크바, 면적은 1707만 5383㎢.</item>
+        <item>유라시아 대륙 중앙부, 몽골고원의 북쪽에 있는 공화국. 13세기 칭기즈 칸의 통솔 아래 세력이 커지기 시작하여, 중국 대륙과 주위 여러 지역을 평정하여 원(元) 제국을 이루었으나, 그 후 세력이 약화되어 중국의 지배를 받아 오다가 1921년 소련의 원조로 혁명을 일으켜 독립하고 1924년 공화국이 되었다. 집단 경영에 의한 농목업이 발달하였고, 양모ㆍ피혁 따위를 주로 생산하며, 주민은 몽골인이고 주요 언어는 몽골어이다. 수도는 울란바토르, 면적은 156만 5000㎢.</item>
+        <item>북아메리카 대륙의 가운데를 차지하는 연방 공화국. 영국의 식민지였으나 1776년 13주가 독립을 선언하고 독립 전쟁에 승리하여 1783년 각국의 승인을 받았다. 이후 영토를 확장하면서 급속한 경제 성장을 이루어 국제 정치ㆍ경제상의 중요한 위치를 차지하고 있다. 50개의 주와 하나의 특별구로 이루어져 있으며, 주민은 대부분이 백인이고 인구의 약 10%가 흑인이며 주요 언어는 영어이다. 수도는 워싱턴, 면적은 937만 5720㎢.</item>
+        <item>인도차이나반도 동부에 있는 사회주의 공화국. 프랑스의 지배 아래에 있다가 1945년에 북부에는 호찌민이 베트남 민주 공화국을 수립하고, 1949년에 남부에는 프랑스의 지원을 받은 베트남 공화국이 성립되어, 전쟁을 벌이다가 1975년에 베트남 공화국이 패망하여 통일이 되었다. 북부에서는 석탄ㆍ철광석 따위의 지하자원이 많이 나고 남부에서는 쌀이 많이 나며, 주민은 베트남족이고 주요 언어는 베트남어이다. 수도는 하노이(Hanoi), 면적은 33만 7912㎢.</item>
+        <item>유럽 서부 대서양 가운데 있는 입헌 군주국. 그레이트브리튼섬과 북아일랜드 및 부근 900여 개의 섬으로 이루어진 국가로, 석탄과 철광을 이용한 중공업 및 원료 수입에 의한 각종 공업이 발달하였다. 주민은 대부분이 앵글로ㆍ색슨으로 신교를 신봉하고 주요 언어는 영어이다. 수도는 런던, 면적은 24만 4820㎢.</item>
+        <item>아시아 동쪽 끝에 있는 입헌 군주국. 일본 열도를 이루는 홋카이도ㆍ혼슈ㆍ시코쿠ㆍ규슈 및 그 부속 도서로 이루어진 섬나라로, 1867년 메이지 유신 이후 자본주의적 군주 국가로서 급속히 발전하였다. 농업과 공업, 전자 산업이 발달하여 경제 수준이 높으며, 일본어를 사용하고 한자와 가나를 쓴다. 수도는 도쿄, 면적은 37만 7800㎢.</item>
+        <item>아시아 동부에 있는 나라. 황허강을 중심으로 고대 문명이 일어난 곳으로, 전설적인 삼황오제 시대를 시작으로 하나라ㆍ은나라ㆍ주나라ㆍ춘추 전국 시대ㆍ진나라ㆍ한나라ㆍ삼국 시대ㆍ진나라ㆍ남북조 시대ㆍ수나라ㆍ당나라ㆍ오대ㆍ송나라ㆍ원나라ㆍ명나라ㆍ청나라를 거쳐 1912년에 중화민국이 성립되었다. 그 뒤 1949년에 중국 공산당이 대륙을 장악하여 중국 본토에 중화 인민 공화국을 세우고, 국민 정부는 타이완으로 옮겼다. 광대한 영토에 농산물, 지하자원 따위의 각종 자원이 풍부하다.</item>
+        <item>북아메리카 대륙 북부에 있는, 영국 연방 내의 연방 국가. 프랑스와 영국의 식민지였다가 1867년에 캐나다 자치령이 되었으며, 1949년에 독립국이 되었다. 세계적인 밀 생산지로, 니켈ㆍ아연ㆍ금ㆍ구리 따위의 광산 자원도 풍부하고 각종 공업과 수산업이 발달하였다. 주민은 영국계와 프랑스계 백인이고 주요 언어는 영어와 프랑스어이다. 수도는 오타와, 면적은 997만 6185㎢.</item>
+        <item>아프리카 동부, 적도 바로 아래에 있는 공화국. 1963년 영국으로부터 독립하였다. 국토의 대부분이 높이 500미터 이상의 고원으로 각종 지하자원이 풍부하며, 커피ㆍ사이잘삼ㆍ밀 따위가 주산물이고 공업도 발달하였다. 주민은 반투계(Bantu系) 흑인이고 주요 언어는 영어와 스와힐리어이다. 수도는 나이로비, 면적은 58만 2646㎢.</item>
+        <item>인도차이나반도 가운데에 있는 입헌 군주국. 평야가 비옥하고 국토의 반 이상이 삼림이다. 쌀과 목재의 생산이 세계적이며 고무, 주석 따위도 많이 난다. 주민은 타이족으로 소승 불교를 믿는다. 수도는 방콕, 면적은 51만 3998㎢.</item>
+        <item>오스트레일리아 대륙의 대부분을 차지하는, 영연방의 자치국. 1788년 이래 영국의 유형 식민지였으나 1901년에 여섯 주로써 연방을 결성하였으며, 1926년에 사실상의 독립국이 되었다. 세계에서 양모가 가장 많이 나고 밀ㆍ설탕ㆍ낙농 제품과 철ㆍ금ㆍ은ㆍ석탄 따위가 많이 나며, 주민은 대부분이 영국계 백인이고 주요 언어는 영어이다. 수도는 캔버라, 면적은 768만 6884㎢.</item>
+        <item>일정한 직업을 잡아 직장에 나감.</item>
+        <item>남녀가 정식으로 부부 관계를 맺음.</item>
+        <item>일이나 유람을 목적으로 다른 고장이나 외국에 가는 일.</item>
+        <item>사람이 몸을 단련하거나 건강을 위하여 몸을 움직이는 일.</item>
+        <item>학문이나 기술을 배우고 익힘.</item>
+        <item>끼니로 음식을 먹음. 또는 그 음식.</item>
+        <item>편한 사이에서, 서로 만나거나 헤어질 때 정답게 하는 인사말.</item>
+        <item>에게 대하여 마음이 편치 못하고 부끄러움.</item>
+        <item>그리워하던 사람을 만나거나 원하는 일이 이루어져서 마음이 즐겁고 기쁘다.</item>
+        <item>쓰레기를 담거나 모아 두는 통</item>
+        <item>종류별로 나누어서 버린 쓰레기 따위를 거두어 감.</item>
+        <item>폐품 따위를 용도를 바꾸거나 가공하여 다시 씀.</item>
+        <item>산은 주위보다 높이 솟아 있는 지형을 말한다. 한국어 고유어로는, 뫼 또는 메라고 부르며, 야산이라고도 부른다. 언덕보다 높고 험준한 곳을 산이라고 부르지만, 높은 정도에 대한 기준은 명확하지 않다. 관습적으로 일정한 기준을 정해 그보다 높은 곳을 산으로 부른다.</item>
+        <item>바다 또는 해양은 지구 표면에서 전체 또는 일부가 육지로 둘러싸인 거대한 소금물이다. 또한 얼어붙은 바다는 유빙이라고 부른다. 일반적으로 대양과 연결된 넓은 해역을 의미하며, 카스피해나 사해처럼 육지에 둘러싸인 경우도 바다로 분류하기도 한다. 그 나라가 영유하고 있는 바다는 영해라고 부른다.</item>
+        <item>하늘은 종종 사람이 땅에서 위로 올려다볼 때 보이는 곳으로 정의된다. 비록 거의 모든 사람들이 하늘을 봐 왔지만, 하늘은 정확하게 정의되기 어렵다. 하늘의 개념은 지구의 땅 위에서 적용되기 때문에, 지평선 위의 대기, 또는 행성과 행성 위에 붙어있는 물체들의 보이는 표면 위쪽을 의미하는 것으로 일반화될 수 있다. 하늘은 행성의 표면에서 위로 볼 때도 보인다. 하늘은 또한 가끔은 행성의 대기의 더 짙은 기체 영역으로 정의되기도 한다.</item>
+        <item>미술은 공간적 또는 시각적 아름다움을 표현하는 예술로 공간예술, 조형예술 등으로 불린다. 시각적 방법 또는 조형적인 방법으로 사람의 감정이나 뜻을 나타내는 예술의 한 종류라고 말할 수 있다. 미술이라는 용어는 미를 재현 또는 표현하는 것을 목표로 하는 여러 재주 또는 기예를 뜻한다. 미술은 주로 사용하는 도구와 표현하는 방법에 따라 장르를 나눈다.</item>
+        <item>게임이란 일정한 규칙에 따라 승부를 겨루면서 즐기는 놀이이다.</item>
+        <item>음악은 소리를 재료로 하는 시간예술이다. 그러나 그 보존 및 표기는 시각적인 매체인 악보를 사용한다. 인간의 고도의 지성적, 감성적 활동의 산물인 음악은 인류의 문화 발전사에서 동서양을 막론하고 매우 일찍 인간 생활의 중요한 요소로 자리를 잡았고 인류 문화 발전의 총체적 원동력이 되어온 동시에 인류의 역사에 지대한 영향을 끼쳐왔다. 음악은 서양음악과 전통음악 등 지역별로, 고대음악과 현대음악 등 시대별로 구분할 수 있다. 일반적으로 사용하는 음악이란 단어는 순수한 음악을 지칭하는 단어이므로 음악에 대응되는 단어는 대중음악이다.</item>
+        <item>어린이날은 미래 사회의 주역이 될 어린이들이 밝고, 슬기롭고, 씩씩하고, 건강하고, 예쁜 마음으로 자라날 수 있도록 제정한 날로 여러 나라에서 기념일로 정하고 있다. 이 날에는 특별히 부모들이 어린이들과 함께 시간을 보내거나, 어린이가 평소에 가지고 싶어 했던 물건 등을 선물해 주기도 한다. 대한민국하고 일본에서는 5월 5일이지만, 나라와 종교,문화권 등에 따라 기념일이 약간씩 차이가 있다.</item>
+        <item>어버이날은 부모를 기념하는 날로, 날짜는 5월 8일이다. 많은 나라에서는 아버지날과 어머니날을 구분해서 기념하고 있다. 이 날에는 각 가정에서 자녀들이 부모와 조부모에게 카네이션을 달아드리고 감사의 뜻으로 선물을 하거나 효도관광에 모시기도 하며, 기념식장에서는 전국의 시·군·구에서 효자·효부로 선발된 사람에게 ‘효자·효부상’과 상금을 수여하고, 이들에게 산업시찰의 특전이 주어지기도 한다.</item>
+        <item>교사의 노고에 감사하는 취지로 만들어진 날로, 여러 나라에서 제정, 시행되고 있으며, 매년 10월 5일은 세계 교사의 날로 기념되고 있다. 대한민국에서 교사의 날(스승의 날)은 5월 15일로, 세종대왕의 양력 생일에 맞춰 제정된 것이다. 다른 많은 나라들은 1994년 유네스코가 설립한 세계 교사의 날인 10월 5일을 스승의 날로 기념하기도 한다.</item>
+    </string-array>
+
+    <string-array name="image_id">
+        <item>korea_image</item>
+        <item>france_image</item>
+        <item>germany_image</item>
+        <item>russia_image</item>
+        <item>mongolia_image</item>
+        <item>us_image</item>
+        <item>vietnam_image</item>
+        <item>britain_image</item>
+        <item>japan_image</item>
+        <item>china_image</item>
+        <item>canada_image</item>
+        <item>kenya_image</item>
+        <item>thailand_image</item>
+        <item>australia_image</item>
+        <item>job_image</item>
+        <item>marriage_image</item>
+        <item>trip_image</item>
+        <item>exercise_image</item>
+        <item>study_image</item>
+        <item>meal_image</item>
+        <item>hello_image</item>
+        <item>sorry_image</item>
+        <item>goodtosee_image</item>
+        <item>garbage_image</item>
+        <item>distinct_image</item>
+        <item>recycle_image</item>
+        <item>mountain_image</item>
+        <item>sea_image</item>
+        <item>sky_image</item>
+        <item>painting_image</item>
+        <item>game_image</item>
+        <item>music_image</item>
+        <item>childrens_day_image</item>
+        <item>parents_day_image</item>
+        <item>teachers_day_image</item>
+    </string-array>
+
+
+
+
     <string name="home_word_of_the_day">오늘의 단어</string>
     <string name="home_category">주제별 어휘학습</string>
     <string name="home_my_vocabulary">나의 단어장</string>

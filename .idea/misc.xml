@@ -9,14 +9,19 @@
         <entry key="..\:/BamsaemKorean/app/src/main/res/layout/activity_word.xml" value="0.25364583333333335" />
         <entry key="..\:/BamsaemKorean/app/src/main/res/layout/activity_writing.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/drawable/radius.xml" value="0.252" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_category.xml" value="0.4660098522167488" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_category.xml" value="0.2388982574480045" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_navigation.xml" value="0.35733695652173914" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_voice.xml" value="0.33" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_word.xml" value="0.22" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_word.xml" value="0.9" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/activity_writing.xml" value="0.33" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/ativity_word.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/fragment_bottom.xml" value="0.35733695652173914" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/fragment_top.xml" value="0.35733695652173914" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/layout/nav_header_navigation.xml" value="0.35733695652173914" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/menu/activity_main_drawer.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/BamsaemKorean/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2734375" />
       </map>
     </option>

@@ -6,22 +6,20 @@ import android.os.Environment;
 import android.speech.tts.TextToSpeech;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
-import android.speech.tts.TextToSpeech;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageButton;
@@ -50,13 +48,26 @@ public class VoiceActivity extends AppCompatActivity {
     MediaRecorder recorder;
     String filename;
     MediaPlayer player;
-
-
+  
     final int PERMISSION = 1;
 
-    @Override protected void onCreate(Bundle savedInstanceState) {
+    @Override 
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voice);
+        
+        TextView land_name;
+        ImageButton read_land_name_button;
+        ImageButton record_button;
+        Button compare_voice;
+        ImageView voice_back_button;
+
+        land_name = findViewById(R.id.land_name); // 최상단의 나라이름 (나라가 뭔지에 따라 값이 바뀜)
+        read_land_name_button = findViewById((R.id.read_land_name_button)); // 버튼 누를 시 Land_name(나라이름) 텍스트를 읽어줌
+        compare_voice = findViewById(R.id.compare_voice); // 기준 발음과 비슷한지 비교해주는 버튼
+        voice_back_button = (ImageView) findViewById(R.id.voice_back_button);
+        stt_result = (TextView)findViewById(R.id.stt_result);
+        record_button = (ImageButton) findViewById(R.id.record_button);
 
         if ( Build.VERSION.SDK_INT >= 23 ){
             // 퍼미션 체크
@@ -122,9 +133,6 @@ public class VoiceActivity extends AppCompatActivity {
             }
         });
 
-        read_land_name_button = (ImageButton) findViewById(R.id.read_land_name_button);
-        land_name = (TextView) findViewById(R.id.land_name);
-
         read_land_name_button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override public void onClick(View v) {
@@ -133,6 +141,10 @@ public class VoiceActivity extends AppCompatActivity {
                 tts.setSpeechRate(1.0f);
                 tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"id1");
             }
+        });
+
+        voice_back_button.setOnClickListener(view->{
+            finish();
         });
     }
 

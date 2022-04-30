@@ -1,5 +1,9 @@
 package com.example.bamsaemkorean;
 
+import android.app.ActivityManager;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,18 +66,40 @@ public class BottomFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        /*
-        View v = getView();
-        ImageButton stageButton = (ImageButton) v.findViewById(R.id.imageButton44);
-        ImageButton searchButton = (ImageButton) v.findViewById(R.id.imageButton41);
-        ImageButton mainButton = (ImageButton) v.findViewById(R.id.imageButton43);
-        ImageButton boardButton = (ImageButton) v.findViewById(R.id.imageButton42);
-        ImageButton shopButton = (ImageButton) v.findViewById(R.id.imageButton40);
-        */
+        View view = inflater.inflate(R.layout.fragment_bottom, container, false);
 
+        ImageButton stageButton = (ImageButton) view.findViewById(R.id.imageButton44);
+        ImageButton searchButton = (ImageButton) view.findViewById(R.id.imageButton41);
+        ImageButton mainButton = (ImageButton) view.findViewById(R.id.imageButton43);
+        ImageButton boardButton = (ImageButton) view.findViewById(R.id.imageButton42);
+        ImageButton shopButton = (ImageButton) view.findViewById(R.id.imageButton40);
 
+        stageButton.setOnClickListener(v -> {
+        });
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bottom, container, false);
+        searchButton.setOnClickListener(v -> {
+        });
+
+        mainButton.setOnClickListener(v -> {
+            ActivityManager manager = (ActivityManager) getActivity().getSystemService(Context.ACTIVITY_SERVICE);
+            List<ActivityManager.RunningTaskInfo> info = manager.getRunningTasks(1);
+            ComponentName componentName = info.get(0).topActivity;
+            String topActivityName = componentName.getShortClassName().substring(1);
+            // System.out.println(topActivityName);
+
+            if (!topActivityName.equals("HomeActivity")) {
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                startActivity(intent);
+                getActivity().finish();
+            }
+        });
+
+        boardButton.setOnClickListener(v -> {
+        });
+
+        shopButton.setOnClickListener(v -> {
+        });
+
+        return view;
     }
 }
