@@ -20,7 +20,6 @@ public class WordActivity extends AppCompatActivity {
     ImageView voice_activity_button;
     ImageView speak_button;
     TextToSpeech tts;
-    TextView explain_paragraph;
     TextView country_name;
     final int PERMISSION = 1;
 
@@ -36,11 +35,10 @@ public class WordActivity extends AppCompatActivity {
 
         voice_activity_button = (ImageView) findViewById(R.id.voice_activity_button);
         speak_button = (ImageView) findViewById(R.id.speak_button);
-        //explain_paragraph = (TextView) findViewById(R.id.explain_paragraph);
         country_name = (TextView) findViewById(R.id.country_name);
 
 
-        country_name.setOnClickListener(view -> {
+        voice_activity_button.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), VoiceActivity.class);
             startActivity(intent);
         });
@@ -57,7 +55,7 @@ public class WordActivity extends AppCompatActivity {
         speak_button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override public void onClick(View v) {
-                CharSequence text = explain_paragraph.getText();
+                CharSequence text = country_name.getText();
                 tts.setPitch(1.0f);
                 tts.setSpeechRate(1.0f);
                 tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"id1");
