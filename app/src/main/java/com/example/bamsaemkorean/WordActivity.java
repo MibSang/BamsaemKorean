@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class WordActivity extends AppCompatActivity {
-
     ImageButton writing_activity_button;
     ImageButton voice_activity_button;
+    ImageButton before_button;
+    ImageButton next_button;
+    TextView word_name;
+    TextView word_name_sec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,20 @@ public class WordActivity extends AppCompatActivity {
 
         writing_activity_button = (ImageButton) findViewById(R.id.writing_activity_button);
         voice_activity_button = (ImageButton) findViewById(R.id.voice_activity_button);
+        word_name = (TextView) findViewById(R.id.word_name);
+        word_name_sec = (TextView) findViewById(R.id.word_name_sec);
+
+        Intent data = getIntent();
+
+        // 자연환경
+        String nature[] = data.getStringArrayExtra("natural_environment_data");
+        word_name.setText(nature[0]);
+        word_name_sec.setText(nature[0]);
+
+        // 대중문화
+        //String culture[] = data.getStringArrayExtra("popular_culture_data");
+        //word_name.setText(culture[0]);
+        //word_name_sec.setText(culture[0]);
 
         writing_activity_button.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), WritingActivity.class);

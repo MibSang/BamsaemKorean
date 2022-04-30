@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/category_back_button"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
@@ -64,7 +64,7 @@
                     android:layout_marginBottom="10dp">
 
                     <ImageView
-                        android:id="@+id/world_category_button"
+                        android:id="@+id/category_country"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -72,7 +72,7 @@
                         app:tint="#FF9800" />
 
                     <ImageView
-                        android:id="@+id/imageView8"
+                        android:id="@+id/category_natural_environment"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -117,7 +117,7 @@
                     android:layout_margin="10dp">
 
                     <ImageView
-                        android:id="@+id/imageView10"
+                        android:id="@+id/category_popular_culture"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -125,7 +125,7 @@
                         app:tint="#CDDC39" />
 
                     <ImageView
-                        android:id="@+id/imageView17"
+                        android:id="@+id/category_special_day"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -170,7 +170,7 @@
                     android:layout_margin="10dp">
 
                     <ImageView
-                        android:id="@+id/imageView18"
+                        android:id="@+id/category_life_plan"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -178,7 +178,7 @@
                         app:tint="#974F4F" />
 
                     <ImageView
-                        android:id="@+id/imageView19"
+                        android:id="@+id/category_daily_life"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -223,7 +223,7 @@
                     android:layout_margin="10dp">
 
                     <ImageView
-                        android:id="@+id/imageView21"
+                        android:id="@+id/category_daily_conversation"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -231,7 +231,7 @@
                         app:tint="#673AB7" />
 
                     <ImageView
-                        android:id="@+id/imageView20"
+                        android:id="@+id/category_environmental_protection"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_weight="1"
