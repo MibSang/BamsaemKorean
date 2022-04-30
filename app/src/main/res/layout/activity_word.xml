@@ -129,7 +129,7 @@
             android:layout_marginStart="8dp"
             android:backgroundTint="#4CAF50"
             android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+            app:layout_constraintBottom_toBottomOf="@+id/speak_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/voice_activity_button"
@@ -138,7 +138,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton18"
+            android:id="@+id/speak_button"
             android:layout_width="54dp"
             android:layout_height="53dp"
             android:layout_marginStart="16dp"
@@ -158,8 +158,8 @@
             android:layout_marginStart="8dp"
             android:backgroundTint="#2196F3"
             android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
-            app:layout_constraintStart_toEndOf="@+id/imageButton18"
+            app:layout_constraintBottom_toBottomOf="@+id/speak_button"
+            app:layout_constraintStart_toEndOf="@+id/speak_button"
             app:srcCompat="@android:drawable/presence_audio_away"
             app:tint="#FFFFFF"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -195,7 +195,7 @@
             android:gravity="center_horizontal|center_vertical"
             android:textAlignment="center"
             android:textColor="#87702D"
-            android:textSize="24sp"
+            android:textSize="21sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.045"

@@ -64,10 +64,13 @@ public class VoiceActivity extends AppCompatActivity {
 
         land_name = findViewById(R.id.land_name); // 최상단의 나라이름 (나라가 뭔지에 따라 값이 바뀜)
         read_land_name_button = findViewById((R.id.read_land_name_button)); // 버튼 누를 시 Land_name(나라이름) 텍스트를 읽어줌
-        compare_voice = findViewById(R.id.compare_voice); // 기준 발음과 비슷한지 비교해주는 버튼
+        // compare_voice = findViewById(R.id.compare_voice); // 기준 발음과 비슷한지 비교해주는 버튼
         voice_back_button = (ImageView) findViewById(R.id.voice_back_button);
         stt_result = (TextView)findViewById(R.id.stt_result);
         record_button = (ImageButton) findViewById(R.id.record_button);
+
+        Intent data = getIntent();
+        land_name.setText(data.getStringExtra("word"));
 
         if ( Build.VERSION.SDK_INT >= 23 ){
             // 퍼미션 체크
@@ -78,12 +81,12 @@ public class VoiceActivity extends AppCompatActivity {
         File sdcard = Environment.getExternalStorageDirectory();  //sd카드 접근
         File file = new File(sdcard, "recorded.mp4");
         filename = file.getAbsolutePath();
-        Log.d("VoiceActivity", "저장할 파일 명 : " + filename);
+        //Log.d("VoiceActivity", "저장할 파일 명 : " + filename);
 
         stt_result = (TextView)findViewById(R.id.stt_result);
         record_button = (ImageButton) findViewById(R.id.record_button);
 
-        intent=new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,getPackageName());
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ko-KR");
 

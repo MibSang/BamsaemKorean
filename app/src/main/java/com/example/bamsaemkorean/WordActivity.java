@@ -80,11 +80,14 @@ public class WordActivity extends AppCompatActivity implements Drawable {
 
         writing_activity_button.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), WritingActivity.class);
+            intent.putExtra("word", word_name_text.getText());
+            intent.putExtra("pos", word_pos_text.getText());
             startActivity(intent);
         });
 
         voice_activity_button.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), VoiceActivity.class);
+            intent.putExtra("word", word_name_text.getText());
             startActivity(intent);
         });
 
@@ -100,7 +103,7 @@ public class WordActivity extends AppCompatActivity implements Drawable {
         speak_button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override public void onClick(View v) {
-                CharSequence text = country_name.getText();
+                CharSequence text = word_name_text.getText();
                 tts.setPitch(1.0f);
                 tts.setSpeechRate(1.0f);
                 tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"id1");
