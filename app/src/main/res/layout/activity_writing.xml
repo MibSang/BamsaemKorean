@@ -11,11 +11,11 @@
     tools:targetApi="s">
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="89dp"
+        android:id="@+id/word_name_text1"
+        android:layout_width="wrap_content"
         android:layout_height="49dp"
         android:layout_marginBottom="10dp"
-        android:text="한국"
+        android:text="대한민국"
         android:textAlignment="center"
         android:textColor="#937F40"
         android:textSize="40sp"
@@ -24,41 +24,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="80dp"
-        android:background="#C1B388"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="국"
-        android:textAlignment="gravity"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="3dp"
-        android:background="#937F40"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="한"
-        android:textAlignment="gravity"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/writing_back_button"
@@ -85,20 +50,20 @@
         android:id="@+id/imageView3"
         android:layout_width="30dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
+        android:layout_marginStart="170dp"
+        app:layout_constraintBottom_toTopOf="@+id/letter_layout"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/writing_button_image"
         app:tint="#937F40" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/word_pos_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="14dp"
         android:text="명사"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintStart_toEndOf="@+id/word_name_text1" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
@@ -128,8 +93,9 @@
             app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <view class="com.example.bamsaemkorean.WritingActivity$MyView"
+        <view
             android:id="@+id/draw"
+            class="com.example.bamsaemkorean.WritingActivity$MyView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:ignore="MissingConstraints"
@@ -137,5 +103,45 @@
             tools:layout_editor_absoluteY="112dp" />
 
     </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/letter_layout"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="2dp"
+            android:background="#937F40"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="한"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="2dp"
+            android:background="#C1B388"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="국"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
