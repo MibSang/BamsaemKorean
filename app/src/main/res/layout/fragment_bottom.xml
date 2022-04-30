@@ -14,7 +14,7 @@
         <ImageButton
             android:id="@+id/imageButton40"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="0dp"
             android:backgroundTint="#00FFFFFF"
             android:padding="25dp"
             android:scaleType="centerCrop"
@@ -22,13 +22,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton42"
+            app:layout_constraintTop_toTopOf="parent"
             app:tint="#C6AE65"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/imageButton41"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="0dp"
             android:backgroundTint="#00FFFFFF"
             android:padding="25dp"
             android:scaleType="centerCrop"
@@ -36,13 +37,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton43"
             app:layout_constraintStart_toEndOf="@+id/imageButton44"
+            app:layout_constraintTop_toTopOf="parent"
             app:tint="#C6AE65"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/imageButton44"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="0dp"
             android:backgroundTint="#00FFFFFF"
             android:padding="25dp"
             android:scaleType="centerCrop"
@@ -50,13 +52,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton41"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:tint="#C6AE65"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton43"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="0dp"
             android:backgroundTint="#00FFFFFF"
             android:padding="25dp"
             android:scaleType="centerCrop"
@@ -64,13 +67,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton42"
             app:layout_constraintStart_toEndOf="@+id/imageButton41"
+            app:layout_constraintTop_toTopOf="parent"
             app:tint="#C6AE65"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/imageButton42"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="0dp"
             android:backgroundTint="#00FFFFFF"
             android:padding="25dp"
             android:scaleType="centerCrop"
@@ -78,6 +82,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton40"
             app:layout_constraintStart_toEndOf="@+id/imageButton43"
+            app:layout_constraintTop_toTopOf="parent"
             app:tint="#C6AE65"
             tools:ignore="SpeakableTextPresentCheck" />
 

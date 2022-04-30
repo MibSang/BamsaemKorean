@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             if (id_text.getText().toString().equals("test") && pw_text.getText().toString().equals("test")) {
                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
+                finish();
             }
             else {
                 Toast.makeText(getApplicationContext(), "잘못된 로그인 정보입니다.",Toast.LENGTH_SHORT).show();
