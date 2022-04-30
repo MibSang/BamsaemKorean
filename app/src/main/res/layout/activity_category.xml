@@ -72,6 +72,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             tools:ignore="SpeakableTextPresentCheck">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

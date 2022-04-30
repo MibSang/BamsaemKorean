@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -14,11 +15,11 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class WritingActivity extends AppCompatActivity {
+    ImageView writing_back_button;
     ImageView word_erase_button;
     TextView word_canvas;
 
@@ -28,14 +29,20 @@ public class WritingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_writing);
 
+        writing_back_button = (ImageView) findViewById(R.id.writing_back_button);
         word_erase_button = (ImageView) findViewById(R.id.word_erase_button); // 지우개
         word_canvas = (TextView) findViewById(R.id.word_canvas);
-        MyView view = (MyView) findViewById(R.id.draw);
+        MyView myView = (MyView) findViewById(R.id.draw);
+
+        writing_back_button.setOnClickListener(view->{
+            Intent intent = new Intent(getApplicationContext(), WordActivity.class);
+            startActivity(intent);
+        });
 
         word_erase_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                view.reset();
+                myView.reset();
             }
         });
     }
@@ -92,7 +99,7 @@ public class WritingActivity extends AppCompatActivity {
             return true;
         }
 
-        public void reset(){
+        public void reset(){ // Canvas에서 그린 것들 지우기
             path.reset();
             invalidate();
         }
