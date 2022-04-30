@@ -1,12 +1,14 @@
 package com.example.bamsaemkorean;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class CategoryActivity extends AppCompatActivity {
+public class CategoryActivity extends AppCompatActivity implements Drawable{
     ImageView world_category_button;
 
     @Override
@@ -20,5 +22,12 @@ public class CategoryActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), WordActivity.class);
             startActivity(intent);
         });
+    }
+
+    @Override
+    public void openDrawer() {
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (!drawerLayout.isDrawerOpen(GravityCompat.START))
+            drawerLayout.openDrawer(GravityCompat.START);
     }
 }
