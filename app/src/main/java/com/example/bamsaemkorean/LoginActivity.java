@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     Button ok_button;
     Button cancel_button;
     Spinner spinner;
-    String language_code;
+    String language_code = "ko";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,8 @@ public class LoginActivity extends AppCompatActivity {
             else {
                 Toast.makeText(getApplicationContext(), "잘못된 로그인 정보입니다.",Toast.LENGTH_SHORT).show();
             }
+
+            set_language_code();
         });
 
         cancel_button.setOnClickListener(v -> {
@@ -56,13 +58,10 @@ public class LoginActivity extends AppCompatActivity {
 
         // 언어 선택
         spinner = (Spinner) findViewById(R.id.language_choice);
-
+        System.out.println(spinner.getSelectedItem().toString());
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-                if(pos == 0){
-                    language_code = "ko";
-                }
                 if(pos == 1){
                     language_code = "en";
                 }
@@ -71,6 +70,9 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 if(pos == 3){
                     language_code = "ja";
+                }
+                if(pos == 0){
+                    language_code = "ko";
                 }
             }
             @Override
@@ -82,6 +84,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void set_language_code(){
         Locale locale = new Locale(language_code);
+        Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
