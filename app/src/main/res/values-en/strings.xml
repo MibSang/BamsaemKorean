@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BamsaemKorean</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_word_of_the_day">word of the day</string>
+    <string name="home_category">category</string>
+    <string name="home_my_vocabulary">my vocabulary</string>
+    <string name="home_card_holder">card holder</string>
+    <string name="home_game">game</string>
+    <string name="home_introduction">about the 밤을새워서라도</string>
+    <string name="bottom_difficulty_selection">difficulty selection</string>
+    <string name="bottom_search">search</string>
+    <string name="bottom_home">home</string>
+    <string name="bottom_notice">notice</string>
+    <string name="bottom_store">store</string>
+    <string name="category_country">country</string>
+    <string name="category_natural_environment">natural environment</string>
+    <string name="category_popular_culture">popular culture</string>
+    <string name="category_special_day">special day</string>
+    <string name="category_life_plan">life plan</string>
+    <string name="category_daily_life">daily life</string>
+    <string name="category_daily_conversation">daily conversation</string>
+    <string name="category_environmental_protection">environmental protection</string>
+    <string name="voice_listening_korean">listening korean</string>
+    <string name="voice_play_record">play record</string>
+</resources>
