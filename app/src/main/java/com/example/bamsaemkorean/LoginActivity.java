@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     Button ok_button;
     Button cancel_button;
     Spinner spinner;
-    String language_code = "ko";
+    String language_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,9 @@ public class LoginActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                if(pos == 0){
+                    language_code = "ko";
+                }
                 if(pos == 1){
                     language_code = "en";
                 }
@@ -70,9 +73,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 if(pos == 3){
                     language_code = "ja";
-                }
-                if(pos == 0){
-                    language_code = "ko";
                 }
             }
             @Override
