@@ -43,6 +43,10 @@
         <item>special_day_data</item>
         <item>special_day_data</item>
         <item>special_day_data</item>
+        <item>team_data</item>
+        <item>team_data</item>
+        <item>team_data</item>
+        <item>team_data</item>
     </string-array>
 
     <string-array name="word_name">
@@ -81,6 +85,10 @@
         <item>어린이날</item>
         <item>어버이날</item>
         <item>스승의날</item>
+        <item>이명모</item>
+        <item>배정우</item>
+        <item>민상화</item>
+        <item>김태형</item>
     </string-array>
 
     <string-array name="word_pos">
@@ -107,6 +115,10 @@
         <item>감탄사</item>
         <item>명사</item>
         <item>형용사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
+        <item>명사</item>
         <item>명사</item>
         <item>명사</item>
         <item>명사</item>
@@ -157,6 +169,10 @@
         <item>어린이날은 미래 사회의 주역이 될 어린이들이 밝고, 슬기롭고, 씩씩하고, 건강하고, 예쁜 마음으로 자라날 수 있도록 제정한 날로 여러 나라에서 기념일로 정하고 있다. 이 날에는 특별히 부모들이 어린이들과 함께 시간을 보내거나, 어린이가 평소에 가지고 싶어 했던 물건 등을 선물해 주기도 한다. 대한민국하고 일본에서는 5월 5일이지만, 나라와 종교,문화권 등에 따라 기념일이 약간씩 차이가 있다.</item>
         <item>어버이날은 부모를 기념하는 날로, 날짜는 5월 8일이다. 많은 나라에서는 아버지날과 어머니날을 구분해서 기념하고 있다. 이 날에는 각 가정에서 자녀들이 부모와 조부모에게 카네이션을 달아드리고 감사의 뜻으로 선물을 하거나 효도관광에 모시기도 하며, 기념식장에서는 전국의 시·군·구에서 효자·효부로 선발된 사람에게 ‘효자·효부상’과 상금을 수여하고, 이들에게 산업시찰의 특전이 주어지기도 한다.</item>
         <item>교사의 노고에 감사하는 취지로 만들어진 날로, 여러 나라에서 제정, 시행되고 있으며, 매년 10월 5일은 세계 교사의 날로 기념되고 있다. 대한민국에서 교사의 날(스승의 날)은 5월 15일로, 세종대왕의 양력 생일에 맞춰 제정된 것이다. 다른 많은 나라들은 1994년 유네스코가 설립한 세계 교사의 날인 10월 5일을 스승의 날로 기념하기도 한다.</item>
+        <item>팀장</item>
+        <item>팀원</item>
+        <item>팀원</item>
+        <item>팀원</item>
     </string-array>
 
     <string-array name="image_id">
@@ -194,6 +210,10 @@
         <item>music_image</item>
         <item>childrens_day_image</item>
         <item>parents_day_image</item>
+        <item>teachers_day_image</item>
+        <item>teachers_day_image</item>
+        <item>teachers_day_image</item>
+        <item>teachers_day_image</item>
         <item>teachers_day_image</item>
     </string-array>
 
