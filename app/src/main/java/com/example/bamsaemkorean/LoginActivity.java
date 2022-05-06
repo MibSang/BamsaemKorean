@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,12 +19,15 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class LoginActivity extends AppCompatActivity {
     EditText id_text;
     EditText pw_text;
     Button ok_button;
     Button cancel_button;
     Spinner spinner;
+    String language_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
         pw_text = (EditText) findViewById(R.id.pw_text);
         ok_button = (Button) findViewById(R.id.ok_button);
         cancel_button = (Button) findViewById(R.id.cancel_button);
-        spinner = (Spinner) findViewById(R.id.language_choice);
 
         ok_button.setOnClickListener(v -> {
             if (id_text.getText().toString().equals("test") && pw_text.getText().toString().equals("test")) {
@@ -51,28 +54,37 @@ public class LoginActivity extends AppCompatActivity {
             System.out.println("cancel clicked");
         });
 
+        // 언어 선택
+        spinner = (Spinner) findViewById(R.id.language_choice);
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
                 if(pos == 0){
-                    ok_button.setText("ko");
+                    language_code = "ko";
                 }
-                else if(pos == 1){
-                    ok_button.setText("en");
+                if(pos == 1){
+                    language_code = "en";
                 }
-                else if(pos == 2){
-                    ok_button.setText("ch");
+                if(pos == 2){
+                    language_code = "zh_CN";
                 }
-                else{
-                    ok_button.setText("jp");
+                if(pos == 3){
+                    language_code = "ja";
                 }
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
+    }
+
+    public void set_language_code(){
+        Locale locale = new Locale(language_code);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
     }
 
     /**
