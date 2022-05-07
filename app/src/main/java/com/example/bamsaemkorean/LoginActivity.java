@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                     language_code = "en";
                 }
                 if(pos == 2){
-                    language_code = "zh_CN";
+                    language_code = "zh";
                 }
                 if(pos == 3){
                     language_code = "ja";

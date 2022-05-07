@@ -47,6 +47,7 @@
         <item>team_data</item>
         <item>team_data</item>
         <item>team_data</item>
+        <item>team_data</item>
     </string-array>
 
     <string-array name="word_name">
@@ -85,6 +86,7 @@
         <item>어린이날</item>
         <item>어버이날</item>
         <item>스승의날</item>
+        <item>밤을새워서라도</item>
         <item>이명모</item>
         <item>배정우</item>
         <item>민상화</item>
@@ -127,10 +129,11 @@
         <item>명사</item>
         <item>명사</item>
         <item>명사</item>
-        <item>명사</item>
-        <item>명사</item>
-        <item>명사</item>
-        <item>명사</item>
+        <item>팀명</item>
+        <item>인명</item>
+        <item>인명</item>
+        <item>인명</item>
+        <item>인명</item>
     </string-array>
 
     <string-array name="word_explanation">
@@ -169,10 +172,11 @@
         <item>어린이날은 미래 사회의 주역이 될 어린이들이 밝고, 슬기롭고, 씩씩하고, 건강하고, 예쁜 마음으로 자라날 수 있도록 제정한 날로 여러 나라에서 기념일로 정하고 있다. 이 날에는 특별히 부모들이 어린이들과 함께 시간을 보내거나, 어린이가 평소에 가지고 싶어 했던 물건 등을 선물해 주기도 한다. 대한민국하고 일본에서는 5월 5일이지만, 나라와 종교,문화권 등에 따라 기념일이 약간씩 차이가 있다.</item>
         <item>어버이날은 부모를 기념하는 날로, 날짜는 5월 8일이다. 많은 나라에서는 아버지날과 어머니날을 구분해서 기념하고 있다. 이 날에는 각 가정에서 자녀들이 부모와 조부모에게 카네이션을 달아드리고 감사의 뜻으로 선물을 하거나 효도관광에 모시기도 하며, 기념식장에서는 전국의 시·군·구에서 효자·효부로 선발된 사람에게 ‘효자·효부상’과 상금을 수여하고, 이들에게 산업시찰의 특전이 주어지기도 한다.</item>
         <item>교사의 노고에 감사하는 취지로 만들어진 날로, 여러 나라에서 제정, 시행되고 있으며, 매년 10월 5일은 세계 교사의 날로 기념되고 있다. 대한민국에서 교사의 날(스승의 날)은 5월 15일로, 세종대왕의 양력 생일에 맞춰 제정된 것이다. 다른 많은 나라들은 1994년 유네스코가 설립한 세계 교사의 날인 10월 5일을 스승의 날로 기념하기도 한다.</item>
-        <item>팀장</item>
-        <item>팀원</item>
-        <item>팀원</item>
-        <item>팀원</item>
+        <item>한국외국어대학교 컴퓨터전자시스템공학부 2022 캡스톤설계 팀 프로젝트</item>
+        <item>이명모(98년생), 고향은 남양주, 취미는 게임과 운동, 컴퓨터공학과 독일어통번역학</item>
+        <item>배정우(99년생), 고향은 문경시, 취미는 축구와 농구, 컴퓨터공학 올인</item>
+        <item>민상화(98년생), 고향은 대전, 취미는 게임과 피아노, 컴퓨터공학과 교육학</item>
+        <item>김태형(98년생), 고향은 서울, 취미는 음악과 영화감상, 컴퓨터공학 올인</item>
     </string-array>
 
     <string-array name="image_id">
@@ -211,10 +215,11 @@
         <item>childrens_day_image</item>
         <item>parents_day_image</item>
         <item>teachers_day_image</item>
-        <item>teachers_day_image</item>
-        <item>teachers_day_image</item>
-        <item>teachers_day_image</item>
-        <item>teachers_day_image</item>
+        <item>team_logo_image</item>
+        <item>leemyungmo</item>
+        <item>baejungwoo</item>
+        <item>minsanghwa</item>
+        <item>kimtaehyung</item>
     </string-array>
 
 
@@ -231,7 +236,7 @@
     <string name="bottom_search">검색</string>
     <string name="bottom_home">홈</string>
     <string name="bottom_notice">게시판</string>
-    <string name="bottom_store">상점</string>
+    <string name="bottom_store">상점</string>eeee
 
     <string name="category_country">나라</string>
     <string name="category_natural_environment">자연환경</string>
