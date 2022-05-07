@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BamsaemKorean</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_word_of_the_day">每日一词</string>
+    <string name="home_category">类别</string>
+    <string name="home_my_vocabulary">我的词汇</string>
+    <string name="home_card_holder">持卡人</string>
+    <string name="home_game">游戏</string>
+    <string name="home_introduction">介绍</string>
+    <string name="bottom_difficulty_selection">选择难度</string>
+    <string name="bottom_search">搜索</string>
+    <string name="bottom_home">家</string>
+    <string name="bottom_notice">公告栏</string>
+    <string name="bottom_store">店铺</string>
+    <string name="category_country">国家</string>
+    <string name="category_natural_environment">自然环境</string>
+    <string name="category_popular_culture">流行文化</string>
+    <string name="category_special_day">特殊的日子</string>
+    <string name="category_life_plan">生活计划</string>
+    <string name="category_daily_life">日常生活</string>
+    <string name="category_daily_conversation">日常对话</string>
+    <string name="category_environmental_protection">环境保护</string>
+    <string name="voice_listening_korean">听韩语</string>
+    <string name="voice_play_record">播放录音</string>
+</resources>
