@@ -1,8 +1,11 @@
 package com.example.bamsaemkorean;
 
+import android.content.ContentResolver;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
+import android.net.Uri;
 import android.os.Environment;
+import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +30,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -74,12 +80,11 @@ public class VoiceActivity extends AppCompatActivity {
 
         if ( Build.VERSION.SDK_INT >= 23 ){
             // 퍼미션 체크
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO},PERMISSION);
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE},PERMISSION);
         }
         permissionCheck();
 
-        File sdcard = Environment.getExternalStorageDirectory();  //sd카드 접근
-        File file = new File(sdcard, "recorded.mp4");
+        File file = new File(this.getExternalFilesDir(null), "record.amr");
         filename = file.getAbsolutePath();
         //Log.d("VoiceActivity", "저장할 파일 명 : " + filename);
 
@@ -87,7 +92,9 @@ public class VoiceActivity extends AppCompatActivity {
         record_button = (ImageButton) findViewById(R.id.record_button);
 
         intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,getPackageName());
+        intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getPackageName());
+        intent.putExtra("android.speech.extra.GET_AUDIO_FORMAT", "audio/AMR");
+        intent.putExtra("android.speech.extra.GET_AUDIO", true);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ko-KR");
 
         mRecognizer=SpeechRecognizer.createSpeechRecognizer(this);
@@ -101,7 +108,8 @@ public class VoiceActivity extends AppCompatActivity {
                     ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, RECORD_AUDIO_PERMISSION_CODE);
                 } else {
                     try {
-                        mRecognizer.startListening(intent);
+                        //mRecognizer.startListening(intent);
+                        stt();
                     } catch (SecurityException e) {
                         e.printStackTrace();
                     }
@@ -163,7 +171,13 @@ public class VoiceActivity extends AppCompatActivity {
             recorder.prepare();
             recorder.start();
 
-            Toast.makeText(this, "녹음 시작됨.", Toast.LENGTH_SHORT).show();
+            Handler delayHandler = new Handler();
+            delayHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    recorder.stop();
+                }
+            }, 3000);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -177,8 +191,6 @@ public class VoiceActivity extends AppCompatActivity {
             player.setDataSource(filename);
             player.prepare();
             player.start();
-
-            Toast.makeText(this, "재생 시작됨.", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -210,6 +222,66 @@ public class VoiceActivity extends AppCompatActivity {
 
     private Activity getActivity() { return this; }
     private Context getContext() { return this; }
+
+    private void stt(){
+        Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        i.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getPackageName());
+        i.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ko-KR");
+        i.putExtra("android.speech.extra.GET_AUDIO_FORMAT", "audio/AMR");
+        i.putExtra("android.speech.extra.GET_AUDIO", true);
+
+        startActivityForResult(i, 1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        ArrayList<String> speechList = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+        String result = speechList.get(0);
+        stt_result.setText(result);
+
+        Uri audioUri = data.getData();
+
+        ContentResolver contentResolver = getContentResolver();
+        InputStream inputStream = null;
+        OutputStream outputStream = null;
+
+        try {
+            inputStream = contentResolver.openInputStream(audioUri);
+            outputStream = null;
+
+            File targetFile = new File(filename);
+
+            outputStream = new FileOutputStream(filename);
+            System.out.println(filename);
+
+            int read = 0;
+            byte[] bytes = new byte[1024];
+
+            while ((read = inputStream.read(bytes)) != -1) {
+                outputStream.write(bytes, 0, read);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (outputStream != null) {
+                try {
+                    // outputStream.flush();
+                    outputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 
     private RecognitionListener listener = new RecognitionListener() {
         @Override
@@ -271,11 +343,12 @@ public class VoiceActivity extends AppCompatActivity {
 
         @Override
         public void onResults(Bundle results) {
-            // 말을 하면 ArrayList에 단어를 넣고 stt_result에 단어를 이어줍니다.
             ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
             for(int i = 0; i < matches.size() ; i++){
                 stt_result.setText(matches.get(i));
             }
+            mRecognizer.stopListening();
+
         }
 
         @Override
