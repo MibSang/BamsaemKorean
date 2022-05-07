@@ -103,10 +103,17 @@ public class WordActivity extends AppCompatActivity implements Drawable {
         speak_button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override public void onClick(View v) {
+                if(tts.isSpeaking()) {
+                    tts.stop();
+                    return;
+                }
                 CharSequence text = word_name_text.getText();
+                CharSequence text2 = word_exp.getText();
+
                 tts.setPitch(1.0f);
                 tts.setSpeechRate(1.0f);
-                tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"id1");
+                // tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"id1");
+                tts.speak(text + ". " + text2, TextToSpeech.QUEUE_ADD, null);
             }
         });
       
