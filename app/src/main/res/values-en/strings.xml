@@ -33,4 +33,46 @@
     <string name="category_environmental_protection">Environmental Protection</string>
     <string name="voice_listening_korean">Listening Korean</string>
     <string name="voice_play_record">Play Record</string>
+    <string-array name="word_explanation">
+        <item>a republic consisting of the Korean Peninsula and its annexed islands to the east of the Asian continent It is also called R.O.K. or Korea. Most of the residents are Korean people, who are of yellow race, and the language is Korean, which belongs to the Altair world, and Korean characters are written in Korean. The capital is Seoul, the area is 221,336 square kilometers, and the South is 99,313 square kilometers.</item>
+        <item>a republic in western Europe Machinery, precious metals, textiles, chemicals, and construction industries have developed, and it is one of the leading agricultural countries in Europe, and most of the residents are Latino and Catholic. The capital city is Paris, with an area of 551,458 square kilometers.</item>
+        <item>a country in central Europe Most of the inhabitants are Tutons, and the main language is German. The capital city of Berlin is 356,734 square kilometers.</item>
+        <item>a country from the eastern part of the European continent to Siberia Most of the inhabitants are Slavic, and the main language is Slavic. The capital city of Moscow is 1,775,383 square kilometers.</item>
+        <item>a republic in central Eurasia to the north of the Mongolian Plateau. Agricultural and forestry by collective management has been developed, and wool and leather are mainly produced, and the residents are Mongolian and the main language is Mongolian. The capital city is Ulaanbaatar, with an area of 1,565,000 square kilometers.</item>
+        <item>a federal republic in the middle of the North American continent It consists of 50 states and one special district, most of whom are white, about 10% of the population is black, and the main language is English. The capital is Washington, with an area of 9,375,720 square kilometers.</item>
+        <item>a socialist republic in the eastern part of the Indochina Peninsula In the north, a lot of underground resources such as coal and iron ore are produced, and a lot of rice is produced in the south, and the residents are Vietnamese, and the main language is Vietnamese. The capital city is Hanoi, with an area of 337,912 square kilometers.</item>
+        <item>a constitutional monarchy in the middle of the Atlantic Ocean in western Europe Heavy industries using coal and iron ore and various industries by importing raw materials have developed. Most of the residents are Anglo-Saxon believers, and the main language is English. The capital city is London, with an area of 244,820 square kilometers.</item>
+        <item>a constitutional monarchy at the eastern end of Asia It is an island country consisting of Hokkaido, Honshu, Shikoku, Kyushu, and its subsidiary islands. With the development of agriculture, industry, and electronics industries, the economic level is high, and Japanese and Chinese characters and kana are used. The capital city is Tokyo, with an area of 377,800 square kilometers.</item>
+        <item>a country in eastern Asia The vast territory is rich in various resources such as agricultural products and underground resources.</item>
+        <item>a federal state in the United Kingdom in northern North America The inhabitants are white British and French, and the main languages are English and French. The capital city is Ottawa, with an area of 9.976,185 square kilometers.</item>
+        <item>Eastern Africa, a republic just below the equator. The inhabitants are Bantu black and the main languages are English and Swahili. The capital is Nairobi and covers an area of 582,646 square kilometers.</item>
+        <item>a constitutional monarchy in the middle of the Indochina Peninsula The capital city is Bangkok, with an area of 513,998 square kilometers.</item>
+        <item>an autonomous state of the Commonwealth, covering much of the Australian continent. The inhabitants are mostly white British and the main language is English. The capital city is Canberra, with an area of 7,686,884 square kilometers.</item>
+        <item>taking up a regular job</item>
+        <item>a formal marriage between a man and a woman</item>
+        <item>going to another town or foreign country for work or sightseeing</item>
+        <item>the work of a person exercising his body or moving his body for his health</item>
+        <item>learning and mastering of learning or skill</item>
+        <item>eating food as a meal Or the food.</item>
+        <item>A friendly greeting when you meet or break up with each other.</item>
+        <item>a feeling of discomfort and shame for</item>
+        <item>I am happy and happy that I met the person I missed or that what I wanted came true.</item>
+        <item>a bin for storing or collecting garbage</item>
+        <item>the action of collecting garbage from various categories</item>
+        <item>repurposing or processing waste articles</item>
+        <item>A mountain is a topography that rises higher than the surroundings. In the native Korean language, it is called moe or mee, and it is also called Yasan. A place that is higher and more rugged than a hill is called a mountain, but the standard for its high degree is not clear. Customarily, certain standards are set, and higher places are called mountains.</item>
+        <item>The ocean, or ocean, is a huge saltwater that is completely or partially landlocked on the Earth\'s surface. In general, it refers to a large sea area connected to the ocean, and even when surrounded by land, such as the Caspian Sea or the Dead Sea, it is classified as a sea. The seas that the country owns are called territorial waters.</item>
+        <item>The sky is often defined as a place where a person looks up from the ground. Sky is also sometimes defined as a darker gas region of the planet\'s atmosphere.</item>
+        <item>Art is an art that expresses spatial or visual beauty and is called spatial art and molding art. Art mainly divides genres according to the tools and expressions used.</item>
+        <item>A game is a game that you enjoy by competing according to certain rules.</item>
+        <item>Music is a time art based on sound. However, its preservation and notation uses musical notes, a visual medium. Since the word music generally used refers to pure music, the word corresponding to music is popular music.</item>
+        <item>Children\'s Day is a day established in many countries so that children who will be the main players of the future society can grow up bright, wise, brave, healthy, and pretty. In Korea and Japan, it is May 5, but the anniversary varies slightly depending on the country, religion, and culture.</item>
+        <item>Parents\' Day is a day to celebrate their parents, and the date is May 8. Many countries celebrate Father\'s Day and Mother\'s Day separately. At the ceremony hall, the "Hyoja and Hyoja Award" and prize money are awarded to those selected for filial piety and filial piety in cities, counties, and districts across the country, and they are also given the privilege of industrial inspection.</item>
+        <item>It is a day created to thank teachers for their hard work, and it is enacted and implemented in various countries, and October 5th is celebrated as World Teachers\' Day every year. Teacher\'s Day (Teacher\'s Day) in Korea is May 15, which was established in time for King Sejong\'s Gregorian birthday.</item>
+        <item>2022 Capstone Design Team Project, Department of Computer and Electronic Systems Engineering, Hankuk University of Foreign Studies.</item>
+        <item>Lee Myung-mo (born in 1998) is from Namyangju, his hobby is playing games and exercising, and his major is computer engineering and German translation and interpretation.</item>
+        <item>Bae Jung-woo (born in 1999), his hometown is Mungyeong City, his hobbies are soccer and basketball, and his major is computer science.</item>
+        <item>Min Sang-hwa (born in 1998) is from Daejeon, his hobby is playing games and piano, and his major is computer engineering and education.</item>
+        <item>Kim Tae-hyung (born in 1998) is from Seoul, his hobby is listening to music and movies, and his major is computer science.</item>
+    </string-array>
 </resources>
